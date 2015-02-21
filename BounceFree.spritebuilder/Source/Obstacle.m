@@ -12,7 +12,7 @@
   CCNode *_obstacle;
 }
 - (void)didLoadFromCCB {
-    _obstacle.physicsBody.collisionType = @"level";
+    _obstacle.physicsBody.collisionType = @"obstacle";
     _obstacle.physicsBody.sensor = YES;     
 }
 

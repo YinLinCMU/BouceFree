@@ -161,7 +161,16 @@
 {
     _sinceTouch += delta;
     
-    character.rotation = clampf(character.rotation, -30.f, 90.f);
+    //character.rotation = clampf(character.rotation, -30.f, 90.f);
+    
+    if(character.physicsNode.position.y >= 200){
+        NSLog(@"change");
+        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
+    }
+    if(character.physicsNode.position.y <= 20){
+        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
+    }
+    
     
     if (character.physicsBody.allowsRotation) {
         float angularVelocity = clampf(character.physicsBody.angularVelocity, -2.f, 1.f);
@@ -229,13 +238,7 @@
             
         }
     }
-    if(character.physicsNode.position.y >= 200){
-        NSLog(@"change");
-        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
-    }
-    if(character.physicsNode.position.y <= 20){
-        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
-    }
+    
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {

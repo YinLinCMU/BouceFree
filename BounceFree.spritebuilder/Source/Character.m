@@ -19,8 +19,9 @@
 }
 
 - (void)flap
-{   self.rotation = 180.0f;
-    self.position = ccp(self.position.x+1, 320 - self.position.y);
+{   //self.rotation = 180.0f;
+    //self.position = ccp(self.position.x+1, 320 - self.position.y);
+    self.physicsBody.velocity = ccp(self.physicsBody.x, 100);
 
 }
 

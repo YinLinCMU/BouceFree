@@ -231,7 +231,7 @@
     if(character.physicsNode.position.y >= 300){
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
     }
-    else if(character.physicsNode.position.y <= 20){
+    if(character.physicsNode.position.y <= 20){
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
     }
 }

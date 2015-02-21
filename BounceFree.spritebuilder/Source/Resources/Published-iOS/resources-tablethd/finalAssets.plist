@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>finalAssets/Platformer-Pixel100@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{415, 1873}, {152, 152}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {152, 152}}</string>
+			<key>sourceSize</key>
+			<string>{152, 152}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel148@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 1}, {112, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {112, 168}}</string>
+			<key>sourceSize</key>
+			<string>{112, 168}</string>
+		</dict>
+		<key>finalAssets/alien.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{281, 1873}, {132, 164}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {132, 164}}</string>
+			<key>sourceSize</key>
+			<string>{132, 164}</string>
+		</dict>
+		<key>finalAssets/alienYellow_walk1@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{143, 1873}, {136, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {136, 166}}</string>
+			<key>sourceSize</key>
+			<string>{136, 166}</string>
+		</dict>
+		<key>finalAssets/alienYellow_walk2@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1873}, {140, 172}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {140, 172}}</string>
+			<key>sourceSize</key>
+			<string>{140, 172}</string>
+		</dict>
+		<key>finalAssets/background.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {1922, 1282}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {1922, 1282}}</string>
+			<key>sourceSize</key>
+			<string>{1922, 1282}</string>
+		</dict>
+		<key>finalAssets/p1_walk01.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{439, 1481}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk02.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{293, 1481}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk03.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{147, 1285}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk04.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{439, 1285}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk05.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{293, 1285}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk06.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1677}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk07.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{293, 1677}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk08.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{147, 1677}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk09.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1481}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk10.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{147, 1481}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+		<key>finalAssets/p1_walk11.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1285}, {144, 194}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 194}}</string>
+			<key>sourceSize</key>
+			<string>{144, 194}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+		<key>textureFileName</key>
+		<string>finalAssets.png</string>
+	</dict>
+</dict>
+</plist>

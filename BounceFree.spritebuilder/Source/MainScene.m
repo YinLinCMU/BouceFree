@@ -229,7 +229,7 @@
             
         }
     }
-    if(character.physicsNode.position.y >= 300){
+    if(character.physicsNode.position.y >= 200){
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
     }
     if(character.physicsNode.position.y <= 20){

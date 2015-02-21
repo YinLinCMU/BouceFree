@@ -163,7 +163,7 @@
     
     //character.rotation = clampf(character.rotation, -30.f, 90.f);
     
-    if(character.physicsNode.position.y >= 200){
+    if(character.physicsBody.velocity.y == 100){
         NSLog(@"change");
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
     }

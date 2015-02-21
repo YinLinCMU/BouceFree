@@ -232,7 +232,7 @@
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, character.physicsBody.velocity.y * -1);
     }
     else if(character.physicsNode.position.y <= 20){
-        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, character.physicsBody.velocity.y * -1);
+        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
     }
 }
 

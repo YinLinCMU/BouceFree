@@ -22,7 +22,7 @@
 {   //self.rotation = 180.0f;
     //self.position = ccp(self.position.x+1, 320 - self.position.y);
     if (self.physicsNode.position.y >= 300) {
-        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  self.physicsBody.velocity.y -100);
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -100);
     }
     else
     self.physicsBody.velocity = ccp(self.physicsBody.velocity.x, 100 - self.physicsBody.velocity.y);

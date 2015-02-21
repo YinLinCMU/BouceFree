@@ -230,9 +230,9 @@
     }
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character obstacle:(CCNode*)obstacle {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
     //[self gameOver];
-    [obstacle removeFromParentAndCleanup:YES];
+    [minus removeFromParentAndCleanup:YES];
     points--;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return TRUE;

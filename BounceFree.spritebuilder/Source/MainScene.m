@@ -245,8 +245,10 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
-    [goal removeFromParent];
-    
+    //[goal removeFromParent];
+    [bonus removeFromParentAndCleanup:YES];
+    points--;
+    _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return TRUE;
 }
 

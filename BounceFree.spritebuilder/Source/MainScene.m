@@ -230,9 +230,9 @@
     }
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character level:(CCNode*)level {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character obstacle:(CCNode*)obstacle {
     //[self gameOver];
-    [level removeFromParentAndCleanup:YES];
+    [obstacle removeFromParentAndCleanup:YES];
     points--;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return TRUE;
@@ -247,10 +247,5 @@
     return TRUE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character goal:(CCNode *)goal {
-    [goal removeFromParent];
-    
-    return TRUE;
-}
 
 @end

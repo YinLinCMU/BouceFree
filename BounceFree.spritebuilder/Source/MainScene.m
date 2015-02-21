@@ -60,6 +60,7 @@
     _scoreLabel.visible = true;
     
     [super initialize];
+    character.physicsBody.velocity = ccp(character.physicsBody.x, 100);
 }
 
 #pragma mark - Touch Handling

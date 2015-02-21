@@ -19,7 +19,7 @@
     self.zOrder = DrawingOrderHero;
     self.physicsBody.collisionType = @"character";
     b = 0;
-    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100);
+    
 }
 
 - (void)flap

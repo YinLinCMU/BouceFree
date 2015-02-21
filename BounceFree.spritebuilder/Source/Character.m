@@ -9,20 +9,28 @@
 #import "Character.h"
 #import "GamePlayScene.h"
 
-@implementation Character
+@implementation Character{
+    int b;
+}
 
 - (void)didLoadFromCCB
 {
     self.position = ccp(115, 20);
     self.zOrder = DrawingOrderHero;
     self.physicsBody.collisionType = @"character";
+    b = 0;
 }
 
 - (void)flap
 {   //self.rotation = 180.0f;
     //self.position = ccp(self.position.x+1, 320 - self.position.y);
-
-    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -1* self.physicsBody.velocity.y);
+    b++;
+    if (b%2 == 0) {
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100);
+    }
+    else{
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -100);
+    }
 
 }
 

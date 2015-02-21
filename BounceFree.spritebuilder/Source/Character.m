@@ -27,7 +27,7 @@
     //self.position = ccp(self.position.x+1, 320 - self.position.y);
     //b++;
     //if (b%2 == 0) {
-        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  self.physicsBody.velocity.y * -1);
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100-self.physicsBody.velocity.y );
     
 }
 

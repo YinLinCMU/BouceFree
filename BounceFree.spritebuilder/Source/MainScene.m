@@ -230,6 +230,7 @@
         }
     }
     if(character.physicsNode.position.y >= 200){
+        NSLog(@"change");
         character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, -100);
     }
     if(character.physicsNode.position.y <= 20){

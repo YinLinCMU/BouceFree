@@ -15,7 +15,7 @@
 
 - (void)didLoadFromCCB
 {
-    self.position = ccp(115, 20);
+    self.position = ccp(115, 40);
     self.zOrder = DrawingOrderHero;
     self.physicsBody.collisionType = @"character";
     b = 0;

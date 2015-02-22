@@ -239,7 +239,7 @@
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
     //[self gameOver];
     [minus removeFromParentAndCleanup:YES];
-    points--;
+    points *= -2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return TRUE;
 }

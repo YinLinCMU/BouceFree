@@ -245,7 +245,7 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character bonus:(CCNode*)bonus {
-
+    character.physicsBody.velocity = ccp(character.physicsBody.velocity.x + 50, character.physicsBody.velocity.y );
     [bonus removeFromParentAndCleanup:YES];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];

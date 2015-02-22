@@ -133,7 +133,7 @@
     }
     else if (r == 2){
         NSUInteger b = arc4random_uniform(568);
-        coin.position = ccp(b, coin.position.y);
+        coin.position = ccp(coin.position.x, b);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
         

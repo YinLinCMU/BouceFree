@@ -27,10 +27,10 @@
     //self.position = ccp(self.position.x+1, 320 - self.position.y);
     b++;
     if (b%2 == 0) {
-        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100-self.physicsBody.velocity.y );
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100);
     }
     else{
-        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  100-self.physicsBody.velocity.y );
+        self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -100);
     }
 }
 

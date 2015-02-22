@@ -245,7 +245,7 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character bonus:(CCNode*)bonus {
-    [super speedup];
+
     [bonus removeFromParentAndCleanup:YES];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];

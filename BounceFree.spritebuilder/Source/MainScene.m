@@ -251,5 +251,13 @@
     return TRUE;
 }
 
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character fence:(CCNode*)fense {
+    [self gameOver];
+    //[minus removeFromParentAndCleanup:YES];
+    //points--;
+    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
+    return TRUE;
+}
+
 
 @end

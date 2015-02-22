@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325F931B1A995ED8004C86EF /* bush.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F931A1A995ED8004C86EF /* bush.m */; };
 		328048311A99351A007B9EB0 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 328048301A99351A007B9EB0 /* Coin.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
@@ -74,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		325F93191A995ED8004C86EF /* bush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bush.h; sourceTree = "<group>"; };
+		325F931A1A995ED8004C86EF /* bush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bush.m; sourceTree = "<group>"; };
 		3280482F1A99351A007B9EB0 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
 		328048301A99351A007B9EB0 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -159,6 +162,8 @@
 				328048301A99351A007B9EB0 /* Coin.m */,
 				BCF66F7819563563004691FD /* MainScene.h */,
 				BCF66F7919563563004691FD /* MainScene.m */,
+				325F93191A995ED8004C86EF /* bush.h */,
+				325F931A1A995ED8004C86EF /* bush.m */,
 				BCF66F7A19563563004691FD /* Obstacle.h */,
 				BCF66F7B19563563004691FD /* Obstacle.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -393,6 +398,7 @@
 				BCF66F7D19563563004691FD /* GamePlayScene.m in Sources */,
 				328048311A99351A007B9EB0 /* Coin.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				325F931B1A995ED8004C86EF /* bush.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BCF66F8019563563004691FD /* Obstacle.m in Sources */,
 				BCF66F7C19563563004691FD /* Character.m in Sources */,

@@ -132,19 +132,20 @@
         [_obstacles addObject:obstacle];
     }
     else if (r == 2){
-        NSUInteger b = arc4random_uniform(568);
+        NSUInteger b = arc4random_uniform(320);
         coin.position = ccp(coin.position.x, b);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
         
         [_coins addObject:coin];
-    }
+    }/*
     else{
+        
         coin.position = ccp(coin.position.x, coin.position.y+280);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
         [_coins addObject:coin];
-    }
+    }*/
     
 }
 

@@ -241,7 +241,7 @@
     [minus removeFromParentAndCleanup:YES];
     points *= -2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    return TRUE;
+    return FALSE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character bonus:(CCNode*)bonus {

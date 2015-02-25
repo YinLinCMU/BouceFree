@@ -250,7 +250,7 @@
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
 
-    return TRUE;
+    return FALSE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character fence:(CCNode*)fense {

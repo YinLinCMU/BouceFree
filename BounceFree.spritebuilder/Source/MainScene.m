@@ -265,7 +265,7 @@
     return FALSE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair coin:(CCSprite*)coin ghost:(CCNode*)ghost {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair coin:(CCSprite*)coin ghost:(CCSprite*)ghost {
     [coin removeFromParentAndCleanup:YES];
     //[minus removeFromParentAndCleanup:YES];
     //[minus removeFromParentAndCleanup:YES];
@@ -274,7 +274,7 @@
     return TRUE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair minus:(CCSprite*)minus ghost:(CCNode*)ghost {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair minus:(CCSprite*)minus ghost:(CCSprite*)ghost {
     //[coin removeFromParentAndCleanup:YES];
     [minus removeFromParentAndCleanup:YES];
     //[minus removeFromParentAndCleanup:YES];
@@ -283,7 +283,7 @@
     return TRUE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCNode*)ghost {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
     [self gameOver];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

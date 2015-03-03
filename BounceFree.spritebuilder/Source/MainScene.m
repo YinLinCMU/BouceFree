@@ -190,10 +190,10 @@
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
     
-    if (physicsNode.position.y >= 300 || physicsNode.position.y <= 0) {
+    //if (physicsNode.position.y >= 300 || physicsNode.position.y <= 0) {
             //[self gameOver];
         NSLog(@"%f",physicsNode.position.y);
-    }
+    //}
 
     
     NSMutableArray *offScreenObstacles = nil;

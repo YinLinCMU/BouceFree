@@ -190,7 +190,7 @@
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
     
-    if (character.physicsNode.position.y >= 200 || character.physicsNode.position.y <= 0) {
+    if (character.physicsNode.position.y >= 300 || character.physicsNode.position.y <= 0) {
         [self gameOver];
     }
 

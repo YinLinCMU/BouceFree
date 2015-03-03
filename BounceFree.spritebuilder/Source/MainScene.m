@@ -265,7 +265,23 @@
     return FALSE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character fence:(CCNode*)fense {
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)coin fence:(CCNode*)ghost {
+    [coin removeFromParentAndCleanup:YES];
+    //[minus removeFromParentAndCleanup:YES];
+    //points--;
+    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
+    return TRUE;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)minus fence:(CCNode*)ghost {
+    [minus removeFromParentAndCleanup:YES];
+    //[minus removeFromParentAndCleanup:YES];
+    //points--;
+    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
+    return TRUE;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character fence:(CCNode*)ghost {
     [self gameOver];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

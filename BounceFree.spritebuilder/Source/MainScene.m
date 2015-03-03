@@ -191,7 +191,8 @@
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
     
     if (character.physicsNode.position.y >= 300 || character.physicsNode.position.y <= 0) {
-        [self gameOver];
+            //[self gameOver];
+        NSLog(@"%f",character.physicsNode.position.y);
     }
 
     

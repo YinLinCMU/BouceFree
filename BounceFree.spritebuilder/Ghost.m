@@ -17,6 +17,6 @@
     
 }
 - (void)fly{
-    self.physicsBody.velocity = ccp(-200, 0);
+    self.physicsBody.velocity = ccp(-150, 0);
 }
 @end

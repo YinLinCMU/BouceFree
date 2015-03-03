@@ -34,7 +34,7 @@
     }
 }
 -(void)speedup{
-    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+10, self.physicsBody.velocity.y);
+    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+50, self.physicsBody.velocity.y);
 }
 
 @end

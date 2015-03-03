@@ -59,7 +59,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>finalAssets/alienYellow_walk1@4x.png</string>
+								<string>finalAssets/Platformer-Pixel372@4x.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -72,12 +72,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.20000000298023224</real>
+							<real>0.13333334028720856</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>finalAssets/alienYellow_walk2@4x.png</string>
+								<string>finalAssets/Platformer-Pixel373@4x.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -217,7 +217,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>finalAssets/alienYellow_walk1@4x.png</string>
+					<string>finalAssets/Platformer-Pixel372@4x.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -227,7 +227,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>finalAssets/alienYellow_walk1@4x.png</string>
+					<string>finalAssets/Platformer-Pixel372@4x.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -314,13 +314,13 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>0.20000000298023224</real>
+			<real>0.13333334028720856</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.20000000298023224</real>
+			<real>0.13333334028720856</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

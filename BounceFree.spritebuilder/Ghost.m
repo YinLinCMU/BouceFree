@@ -17,6 +17,6 @@
 }
 - (void)randomFly{
     NSUInteger r = arc4random_uniform(50);
-    self.physicsBody.velocity = ccp(-200, r-100);
+    self.physicsBody.velocity = ccp(0, r-100);
 }
 @end

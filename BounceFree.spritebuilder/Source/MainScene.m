@@ -9,6 +9,7 @@
 #import "MainScene.h"
 #import "Obstacle.h"
 #import "Coin.h"
+#import "Ghost.h"
 
 @interface CGPointObject : NSObject{
     CGPoint _ratio;
@@ -117,6 +118,9 @@
     
     Coin *coin = (Coin *)[CCBReader load:@"Coin"];
     coin.position = worldPosition;
+    
+    Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
+    ghost.position = worldPosition;
 
     NSUInteger r = arc4random_uniform(5);
     if (r == 0) {
@@ -138,6 +142,11 @@
         [physicsNode addChild:coin];
         
         [_coins addObject:coin];
+    }
+    else if (r == 3){
+        obstacle.zOrder = DrawingOrderPipes;
+        [physicsNode addChild:ghost];
+        [_obstacles addObject:ghost];
     }/*
     else{
         

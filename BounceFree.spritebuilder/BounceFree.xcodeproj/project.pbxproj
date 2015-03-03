@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		325F931B1A995ED8004C86EF /* bush.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F931A1A995ED8004C86EF /* bush.m */; };
 		328048311A99351A007B9EB0 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 328048301A99351A007B9EB0 /* Coin.m */; };
+		32E2B8C71AA59F790032C657 /* Ghost.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2B8C61AA59F790032C657 /* Ghost.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -79,6 +80,8 @@
 		325F931A1A995ED8004C86EF /* bush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bush.m; sourceTree = "<group>"; };
 		3280482F1A99351A007B9EB0 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
 		328048301A99351A007B9EB0 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
+		32E2B8C51AA59F790032C657 /* Ghost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ghost.h; sourceTree = "<group>"; };
+		32E2B8C61AA59F790032C657 /* Ghost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ghost.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				BCF66F7519563563004691FD /* GamePlayScene.m */,
 				3280482F1A99351A007B9EB0 /* Coin.h */,
 				328048301A99351A007B9EB0 /* Coin.m */,
+				32E2B8C51AA59F790032C657 /* Ghost.h */,
+				32E2B8C61AA59F790032C657 /* Ghost.m */,
 				BCF66F7819563563004691FD /* MainScene.h */,
 				BCF66F7919563563004691FD /* MainScene.m */,
 				325F93191A995ED8004C86EF /* bush.h */,
@@ -398,6 +403,7 @@
 				BCF66F7D19563563004691FD /* GamePlayScene.m in Sources */,
 				328048311A99351A007B9EB0 /* Coin.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				32E2B8C71AA59F790032C657 /* Ghost.m in Sources */,
 				325F931B1A995ED8004C86EF /* bush.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BCF66F8019563563004691FD /* Obstacle.m in Sources */,

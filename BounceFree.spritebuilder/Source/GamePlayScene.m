@@ -20,7 +20,7 @@
     timeSinceObstacle += delta; //delta = 1/60 of a second
     //check to see if 2s have passed
 
-    if(timeSinceObstacle > 0.1f){
+    if(timeSinceObstacle > 0.8f){
     //add new obstacle
         [self addObstacle];
         //[_topPipe loadup];

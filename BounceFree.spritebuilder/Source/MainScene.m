@@ -193,6 +193,7 @@
     //if (physicsNode.position.y >= 300 || physicsNode.position.y <= 0) {
             //[self gameOver];
         NSLog(@"%f",physicsNode.position.y);
+        NSLog(@"c=%f",character.physicsNode.position.y);
     //}
 
     

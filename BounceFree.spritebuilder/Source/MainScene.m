@@ -137,7 +137,7 @@
         [_obstacles addObject:obstacle];
     }
     else if (r == 2 || r == 3 || r == 6){
-        NSUInteger b = arc4random_uniform(300);
+        NSUInteger b = arc4random_uniform(280);
         coin.position = ccp(coin.position.x, b);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
@@ -145,7 +145,7 @@
         [_coins addObject:coin];
     }
     else if (r == 4 || r == 5){
-        NSUInteger b = arc4random_uniform(300);
+        NSUInteger b = arc4random_uniform(280);
         ghost.position = ccp(ghost.position.x, b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:ghost];

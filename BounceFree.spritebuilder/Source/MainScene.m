@@ -147,9 +147,6 @@
         NSUInteger b = arc4random_uniform(300);
         ghost.position = ccp(ghost.position.x, b);
         obstacle.zOrder = DrawingOrderPipes;
-        
-        NSUInteger c = arc4random_uniform(5);
-        ghost.physicsBody.velocity = ccp(self.physicsBody.velocity.x, c-10);
         [physicsNode addChild:ghost];
 
     }/*

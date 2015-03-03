@@ -42,7 +42,7 @@
     BOOL _gameOver;
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_nameLabel;
-    int cnt = 0;
+    int cnt;
     int points;
 }
 
@@ -62,6 +62,7 @@
     
     [super initialize];
     character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
+    cnt = 0;
 }
 
 #pragma mark - Touch Handling

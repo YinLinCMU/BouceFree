@@ -144,9 +144,11 @@
         [_coins addObject:coin];
     }
     else if (r == 3){
+        NSUInteger b = arc4random_uniform(300);
+        ghost.position = ccp(ghost.position.x, b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:ghost];
-        [_obstacles addObject:ghost];
+
     }/*
     else{
         

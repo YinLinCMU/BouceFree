@@ -123,7 +123,7 @@
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
 
-    NSUInteger r = arc4random_uniform(6);
+    NSUInteger r = arc4random_uniform(7);
     if (r == 0) {
         obstacle.rotation = 180.0f;
         obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
@@ -136,7 +136,7 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 2 || r == 3 || r == 6){
+    else if (r == 2 || r == 3 || r == 6 || 7){
         NSUInteger b = arc4random_uniform(300);
         coin.position = ccp(coin.position.x, b);
         coin.zOrder = DrawingOrderPipes;

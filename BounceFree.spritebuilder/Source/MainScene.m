@@ -136,7 +136,7 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 2 || r == 3 || r == 6 || 7){
+    else if (r == 2 || r == 3 || r == 6){
         NSUInteger b = arc4random_uniform(300);
         coin.position = ccp(coin.position.x, b);
         coin.zOrder = DrawingOrderPipes;

@@ -265,8 +265,8 @@
     return FALSE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair coin:(CCSprite*)coin ghost:(CCSprite*)ghost {
-    [coin removeFromParentAndCleanup:YES];
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair bonus:(CCSprite*)bonus ghost:(CCSprite*)ghost {
+    [bonus removeFromParentAndCleanup:YES];
     //[minus removeFromParentAndCleanup:YES];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

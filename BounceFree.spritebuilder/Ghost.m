@@ -14,9 +14,6 @@
 - (void)didLoadFromCCB{
     _ghost.physicsBody.collisionType = @"ghost";
     _ghost.physicsBody.sensor = YES;
-}
-- (void)randomFly{
-    NSUInteger r = arc4random_uniform(10);
-    self.physicsBody.velocity = ccp(-200, r-5);
+    _ghost.physicsBody.velocity = ccp(-200, 0);
 }
 @end

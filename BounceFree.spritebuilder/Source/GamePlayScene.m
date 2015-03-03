@@ -26,7 +26,7 @@
     }
     
     if(time%10 == 0){
-        [character speedup];
+       // [character speedup];
     }
     
 }

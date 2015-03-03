@@ -59,7 +59,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>finalAssets/Platformer-Pixel850@4x.png</string>
+								<string>finalAssets/c1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -77,7 +77,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>finalAssets/Platformer-Pixel851@4x.png</string>
+								<string>finalAssets/c2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -217,7 +217,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>finalAssets/Platformer-Pixel850@4x.png</string>
+					<string>finalAssets/c1.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -227,7 +227,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>finalAssets/Platformer-Pixel850@4x.png</string>
+					<string>finalAssets/c1.png</string>
 				</array>
 			</dict>
 			<dict>

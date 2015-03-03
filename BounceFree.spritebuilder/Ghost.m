@@ -16,7 +16,7 @@
     _ghost.physicsBody.sensor = YES;
 }
 - (void)randomFly{
-    NSUInteger r = arc4random_uniform(200);
+    NSUInteger r = arc4random_uniform(50);
     self.physicsBody.velocity = ccp(-150, r-100);
 }
 @end

@@ -249,9 +249,8 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
-    //[self gameOver];
     [minus removeFromParentAndCleanup:YES];
-    points *= -2;
+    points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return FALSE;
 }
@@ -267,20 +266,12 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair bonus:(CCSprite*)bonus ghost:(CCSprite*)ghost {
     [bonus removeFromParentAndCleanup:YES];
-    //[minus removeFromParentAndCleanup:YES];
-    //[minus removeFromParentAndCleanup:YES];
-    //points--;
-    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    return TRUE;
+    return FALSE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair minus:(CCSprite*)minus ghost:(CCSprite*)ghost {
-    //[coin removeFromParentAndCleanup:YES];
     [minus removeFromParentAndCleanup:YES];
-    //[minus removeFromParentAndCleanup:YES];
-    //points--;
-    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    return TRUE;
+    return FALSE;
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {

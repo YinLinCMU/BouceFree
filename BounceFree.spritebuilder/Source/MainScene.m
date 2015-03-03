@@ -239,7 +239,7 @@
         @try
         {
             character.physicsBody.velocity = ccp(delta+80.f, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
-            
+            NSLog(@"delta=%f", delta);
             [super update:delta];
         }
         @catch(NSException* ex)

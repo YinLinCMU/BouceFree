@@ -82,10 +82,23 @@
 			<key>sourceSize</key>
 			<string>{1922, 1282}</string>
 		</dict>
+		<key>finalAssets/choco@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{439, 1677}, {140, 140}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {140, 140}}</string>
+			<key>sourceSize</key>
+			<string>{140, 140}</string>
+		</dict>
 		<key>finalAssets/p1_walk01.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{439, 1481}, {144, 194}}</string>
+			<string>{{1, 1285}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +111,7 @@
 		<key>finalAssets/p1_walk02.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{293, 1481}, {144, 194}}</string>
+			<string>{{293, 1677}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -124,7 +137,7 @@
 		<key>finalAssets/p1_walk04.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{439, 1285}, {144, 194}}</string>
+			<string>{{439, 1481}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -137,7 +150,7 @@
 		<key>finalAssets/p1_walk05.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{293, 1285}, {144, 194}}</string>
+			<string>{{293, 1481}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +176,7 @@
 		<key>finalAssets/p1_walk07.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{293, 1677}, {144, 194}}</string>
+			<string>{{439, 1285}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +189,7 @@
 		<key>finalAssets/p1_walk08.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{147, 1677}, {144, 194}}</string>
+			<string>{{293, 1285}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -202,7 +215,7 @@
 		<key>finalAssets/p1_walk10.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{147, 1481}, {144, 194}}</string>
+			<string>{{147, 1677}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -215,7 +228,7 @@
 		<key>finalAssets/p1_walk11.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1285}, {144, 194}}</string>
+			<string>{{147, 1481}, {144, 194}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>

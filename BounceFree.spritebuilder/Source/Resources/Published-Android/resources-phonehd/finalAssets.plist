@@ -82,10 +82,23 @@
 			<key>sourceSize</key>
 			<string>{961, 641}</string>
 		</dict>
+		<key>finalAssets/choco@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{246, 916}, {70, 70}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {70, 70}}</string>
+			<key>sourceSize</key>
+			<string>{70, 70}</string>
+		</dict>
 		<key>finalAssets/p1_walk01.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{223, 644}, {72, 97}}</string>
+			<string>{{1, 644}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +111,7 @@
 		<key>finalAssets/p1_walk02.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{149, 644}, {72, 97}}</string>
+			<string>{{149, 743}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -124,7 +137,7 @@
 		<key>finalAssets/p1_walk04.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{149, 842}, {72, 97}}</string>
+			<string>{{223, 644}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -137,11 +150,11 @@
 		<key>finalAssets/p1_walk05.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{147, 941}, {72, 97}}</string>
+			<string>{{149, 644}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {72, 97}}</string>
 			<key>sourceSize</key>
@@ -163,7 +176,7 @@
 		<key>finalAssets/p1_walk07.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{149, 743}, {72, 97}}</string>
+			<string>{{149, 842}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,11 +189,11 @@
 		<key>finalAssets/p1_walk08.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{75, 842}, {72, 97}}</string>
+			<string>{{147, 941}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {72, 97}}</string>
 			<key>sourceSize</key>
@@ -202,7 +215,7 @@
 		<key>finalAssets/p1_walk10.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{75, 743}, {72, 97}}</string>
+			<string>{{75, 842}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -215,7 +228,7 @@
 		<key>finalAssets/p1_walk11.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 644}, {72, 97}}</string>
+			<string>{{75, 743}, {72, 97}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>

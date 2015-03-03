@@ -148,6 +148,7 @@
         ghost.position = ccp(ghost.position.x, b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:ghost];
+        [ghost randomFly];
 
     }/*
     else{

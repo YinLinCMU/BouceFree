@@ -9,5 +9,5 @@
 #import "CCSprite.h"
 
 @interface Ghost : CCSprite
-
+- (void)randomFly;
 @end

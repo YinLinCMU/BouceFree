@@ -123,7 +123,7 @@
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
 
-    NSUInteger r = arc4random_uniform(7);
+    NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
         obstacle.rotation = 180.0f;
         obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);

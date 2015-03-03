@@ -42,7 +42,7 @@
     BOOL _gameOver;
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_nameLabel;
-    
+    int cnt = 0;
     int points;
 }
 
@@ -238,8 +238,9 @@
     {
         @try
         {
-            character.physicsBody.velocity = ccp(delta+80.f, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
-            NSLog(@"delta=%f", delta);
+            character.physicsBody.velocity = ccp(cnt+80.f, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
+            NSLog(@"delta=%d", cnt);
+            cnt++;
             [super update:delta];
         }
         @catch(NSException* ex)

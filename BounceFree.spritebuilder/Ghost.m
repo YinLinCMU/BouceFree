@@ -14,6 +14,8 @@
 - (void)didLoadFromCCB{
     _ghost.physicsBody.collisionType = @"ghost";
     _ghost.physicsBody.sensor = YES;
-    _ghost.physicsBody.velocity = ccp(-500, self.physicsBody.velocity.y);
+}
+- (void)randomFly{
+    self.physicsBody.velocity = ccp(-500, self.physicsBody.velocity.y);
 }
 @end

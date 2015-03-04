@@ -102,6 +102,7 @@
         
         [self runAction:bounce];
     }
+    //TODO: game over
 }
 
 - (void)restart {

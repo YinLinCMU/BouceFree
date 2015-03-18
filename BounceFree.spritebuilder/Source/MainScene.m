@@ -256,7 +256,6 @@
     [minus removeFromParentAndCleanup:YES];
     points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, character.physicsBody.velocity.y-10);
     return FALSE;
 }
 

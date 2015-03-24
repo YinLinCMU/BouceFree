@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		325F931B1A995ED8004C86EF /* bush.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F931A1A995ED8004C86EF /* bush.m */; };
-		328048311A99351A007B9EB0 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 328048301A99351A007B9EB0 /* Coin.m */; };
-		32E2B8C71AA59F790032C657 /* Ghost.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2B8C61AA59F790032C657 /* Ghost.m */; };
+		327461B11AC22D70006FF655 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 327461AE1AC22D70006FF655 /* Coin.m */; };
+		327461B21AC22D70006FF655 /* Ghost.m in Sources */ = {isa = PBXBuildFile; fileRef = 327461B01AC22D70006FF655 /* Ghost.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -76,12 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		325F93191A995ED8004C86EF /* bush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bush.h; sourceTree = "<group>"; };
-		325F931A1A995ED8004C86EF /* bush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bush.m; sourceTree = "<group>"; };
-		3280482F1A99351A007B9EB0 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
-		328048301A99351A007B9EB0 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
-		32E2B8C51AA59F790032C657 /* Ghost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ghost.h; sourceTree = "<group>"; };
-		32E2B8C61AA59F790032C657 /* Ghost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ghost.m; sourceTree = "<group>"; };
+		327461AD1AC22D70006FF655 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coin.h; path = Source/Coin.h; sourceTree = "<group>"; };
+		327461AE1AC22D70006FF655 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coin.m; path = Source/Coin.m; sourceTree = "<group>"; };
+		327461AF1AC22D70006FF655 /* Ghost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ghost.h; path = Source/Ghost.h; sourceTree = "<group>"; };
+		327461B01AC22D70006FF655 /* Ghost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ghost.m; path = Source/Ghost.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -157,18 +154,16 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				327461AD1AC22D70006FF655 /* Coin.h */,
+				327461AE1AC22D70006FF655 /* Coin.m */,
+				327461AF1AC22D70006FF655 /* Ghost.h */,
+				327461B01AC22D70006FF655 /* Ghost.m */,
 				BCF66F7219563563004691FD /* Character.h */,
 				BCF66F7319563563004691FD /* Character.m */,
 				BCF66F7419563563004691FD /* GamePlayScene.h */,
 				BCF66F7519563563004691FD /* GamePlayScene.m */,
-				3280482F1A99351A007B9EB0 /* Coin.h */,
-				328048301A99351A007B9EB0 /* Coin.m */,
-				32E2B8C51AA59F790032C657 /* Ghost.h */,
-				32E2B8C61AA59F790032C657 /* Ghost.m */,
 				BCF66F7819563563004691FD /* MainScene.h */,
 				BCF66F7919563563004691FD /* MainScene.m */,
-				325F93191A995ED8004C86EF /* bush.h */,
-				325F931A1A995ED8004C86EF /* bush.m */,
 				BCF66F7A19563563004691FD /* Obstacle.h */,
 				BCF66F7B19563563004691FD /* Obstacle.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -401,14 +396,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF66F7D19563563004691FD /* GamePlayScene.m in Sources */,
-				328048311A99351A007B9EB0 /* Coin.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
-				32E2B8C71AA59F790032C657 /* Ghost.m in Sources */,
-				325F931B1A995ED8004C86EF /* bush.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BCF66F8019563563004691FD /* Obstacle.m in Sources */,
 				BCF66F7C19563563004691FD /* Character.m in Sources */,
+				327461B11AC22D70006FF655 /* Coin.m in Sources */,
 				BCF66F7F19563563004691FD /* MainScene.m in Sources */,
+				327461B21AC22D70006FF655 /* Ghost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

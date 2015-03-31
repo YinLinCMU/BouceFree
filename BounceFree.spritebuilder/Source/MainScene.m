@@ -210,9 +210,10 @@
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
     
     if (character.position.y >= 290) {
+        Character * newcharacter = (Character*)[CCBReader load:@"Character"];
         [character removeFromParent];
-        character = (Character*)[CCBReader load:@"Character"];
-        [physicsNode addChild:character];
+        [physicsNode addChild:newcharacter];
+        character = newcharacter;
 
         //   character.position = ccp(character.position.x, 21);
     }

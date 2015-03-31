@@ -134,8 +134,8 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>0.84951388835906982</real>
-							<real>0.79620468616485596</real>
+							<real>0.96231496334075928</real>
+							<real>0.96750599145889282</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -148,8 +148,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -247,6 +245,8 @@
 						<real>0.5</real>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

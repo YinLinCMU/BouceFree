@@ -160,6 +160,7 @@
         
         [_coins addObject:coin];
         
+        fence.position = ccp(fence.position.x+5, b);
         fence.zOrder = DrawingOrderPipes;
         [physicsNode addChild:fence];
         [_fences addObject:fence];

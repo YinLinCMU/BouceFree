@@ -10,6 +10,7 @@
 #import "Obstacle.h"
 #import "Coin.h"
 #import "Ghost.h"
+#import "Fence.h"
 
 @interface CGPointObject : NSObject{
     CGPoint _ratio;
@@ -37,6 +38,8 @@
     
     NSMutableArray *_coins;
     
+    NSMutableArray *_fences;
+    
     CCButton *_restartButton;
     
     BOOL _gameOver;
@@ -57,6 +60,7 @@
     
     _obstacles = [NSMutableArray array];
     _coins = [NSMutableArray array];
+    _fences = [NSMutableArray array];
     points = 0;
     _scoreLabel.visible = true;
     
@@ -118,18 +122,25 @@
     CGPoint worldPosition = [physicsNode convertToNodeSpace:screenPosition];
     obstacle.position = worldPosition;
     
+    Fence *fence = (Fence *)[CCBReader load:@"Fence"];
+    fence.position = worldPosition;
+    
     Coin *coin = (Coin *)[CCBReader load:@"Coin"];
     coin.position = worldPosition;
     
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
+    
+    fence.position = ccp(fence.position.x, fence.position.y);
+    [physicsNode addChild:fence];
+    [_fences addObject:fence];
 
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
         NSUInteger b = 20 + arc4random_uniform(260);
-        //obstacle.rotation = 180.0f;
-        //obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
-        obstacle.position = ccp(obstacle.position.x ,b);
+        obstacle.rotation = 180.0f;
+        obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
+        //obstacle.position = ccp(obstacle.position.x ,b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
@@ -253,14 +264,14 @@
     }
     
 }
-/*
+
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
     [minus removeFromParentAndCleanup:YES];
     points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return FALSE;
 }
-*/
+
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character bonus:(CCNode*)bonus {
 
     [bonus removeFromParentAndCleanup:YES];
@@ -288,5 +299,9 @@
     return TRUE;
 }
 
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character edge:(CCNode *)edge{
+    [self gameOver];
+    return TRUE;
+}
 
 @end

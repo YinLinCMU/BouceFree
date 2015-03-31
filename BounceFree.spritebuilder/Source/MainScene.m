@@ -126,7 +126,7 @@
     fence.position = worldPosition;
     
     Coin *coin = (Coin *)[CCBReader load:@"Coin"];
-    coin.position = worldPosition;
+    coin.position = ccp(0, 0);
     
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
@@ -137,7 +137,7 @@
 
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
-        NSUInteger b = 20 + arc4random_uniform(260);
+        //NSUInteger b = 20 + arc4random_uniform(260);
         obstacle.rotation = 180.0f;
         obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
         //obstacle.position = ccp(obstacle.position.x ,b);

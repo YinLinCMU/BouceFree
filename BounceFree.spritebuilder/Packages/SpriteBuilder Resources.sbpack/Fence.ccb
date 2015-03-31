@@ -143,7 +143,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
+					<real>-1</real>
 					<real>-1</real>
 				</array>
 			</dict>

@@ -126,12 +126,12 @@
     fence.position = worldPosition;
     
     Coin *coin = (Coin *)[CCBReader load:@"Coin"];
-    coin.position = ccp(0, 0);
+    coin.position = worldPosition;
     
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
     
-    fence.position = ccp(fence.position.x, fence.position.y);
+    //fence.position = ccp(fence.position.x, fence.position.y);
     [physicsNode addChild:fence];
     [_fences addObject:fence];
 

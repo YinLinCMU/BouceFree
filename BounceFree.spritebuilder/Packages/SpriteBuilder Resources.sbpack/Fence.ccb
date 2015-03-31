@@ -638,8 +638,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>121.97804260253906</real>
-							<real>17.5</real>
+							<real>114.25884246826172</real>
+							<real>65.7449951171875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -713,6 +713,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

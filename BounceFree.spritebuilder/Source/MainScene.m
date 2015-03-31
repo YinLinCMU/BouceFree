@@ -253,14 +253,14 @@
     }
     
 }
-
+/*
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
     [minus removeFromParentAndCleanup:YES];
     points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     return FALSE;
 }
-
+*/
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character bonus:(CCNode*)bonus {
 
     [bonus removeFromParentAndCleanup:YES];

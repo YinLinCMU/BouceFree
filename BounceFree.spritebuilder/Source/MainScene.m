@@ -131,7 +131,10 @@
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
 
-    
+
+    fence.zOrder = DrawingOrderPipes;
+    [physicsNode addChild:fence];
+    [_fences addObject:fence];
     
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
@@ -160,10 +163,7 @@
         
         [_coins addObject:coin];
         
-        fence.position = ccp(fence.position.x+5, b);
-        fence.zOrder = DrawingOrderPipes;
-        [physicsNode addChild:fence];
-        [_fences addObject:fence];
+        
     }
     else if (r == 4 || r == 5){
         NSUInteger b = 20 + arc4random_uniform(260);

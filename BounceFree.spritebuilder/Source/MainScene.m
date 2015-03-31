@@ -208,7 +208,7 @@
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
-    
+    /*
     if (character.position.y >= 290) {
         Character * newcharacter = (Character*)[CCBReader load:@"Character"];
         newcharacter.position = ccp(115, 21);
@@ -222,7 +222,7 @@
     if (character.position.y <= 21) {
         character.position = ccp(character.position.x, 300);
     }
-
+*/
     
     NSMutableArray *offScreenObstacles = nil;
     

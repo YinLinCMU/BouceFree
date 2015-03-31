@@ -211,8 +211,9 @@
     
     if (character.position.y >= 290) {
         Character * newcharacter = (Character*)[CCBReader load:@"Character"];
-        [character removeFromParent];
+        
         [physicsNode addChild:newcharacter];
+        [character removeFromParent];
         character = newcharacter;
 
         //   character.position = ccp(character.position.x, 21);

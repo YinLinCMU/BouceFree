@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -40,7 +40,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Obstacle</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -60,7 +60,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>fence</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -78,12 +78,24 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>22</real>
+					<real>5.07421875</real>
+					<real>12.832046508789062</real>
 				</array>
 				<array>
-					<real>42</real>
-					<real>22</real>
+					<real>13.347624778747559</real>
+					<real>2.535057544708252</real>
+				</array>
+				<array>
+					<real>19.725030899047852</real>
+					<real>13.607832908630371</real>
+				</array>
+				<array>
+					<real>27.925361633300781</real>
+					<real>1.8423668146133423</real>
+				</array>
+				<array>
+					<real>35.25390625</real>
+					<real>12.527359008789062</real>
 				</array>
 				<array>
 					<real>42</real>
@@ -94,20 +106,60 @@
 			<array>
 				<array>
 					<array>
-						<real>42</real>
+						<real>27.935596466064453</real>
 						<real>0.0</real>
 					</array>
 					<array>
 						<real>42</real>
-						<real>22</real>
+						<real>0.0</real>
+					</array>
+					<array>
+						<real>35.25390625</real>
+						<real>12.527359008789062</real>
+					</array>
+					<array>
+						<real>27.925361633300781</real>
+						<real>1.8423668146133423</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>13.347624778747559</real>
+						<real>2.535057544708252</real>
+					</array>
+					<array>
+						<real>5.07421875</real>
+						<real>12.832046508789062</real>
 					</array>
 					<array>
 						<real>0.0</real>
-						<real>22</real>
+						<real>0.0</real>
 					</array>
 					<array>
+						<real>13.636018753051758</real>
 						<real>0.0</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>13.636018753051758</real>
 						<real>0.0</real>
+					</array>
+					<array>
+						<real>27.935596466064453</real>
+						<real>0.0</real>
+					</array>
+					<array>
+						<real>27.925361633300781</real>
+						<real>1.8423668146133423</real>
+					</array>
+					<array>
+						<real>19.725030899047852</real>
+						<real>13.607832908630371</real>
+					</array>
+					<array>
+						<real>13.347624778747559</real>
+						<real>2.535057544708252</real>
 					</array>
 				</array>
 			</array>
@@ -143,8 +195,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>0.5</real>
+					<real>0.5</real>
 				</array>
 			</dict>
 			<dict>
@@ -168,7 +220,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>finalAssets/Platformer-Pixel17@4x.png</string>
+					<string>finalAssets/Platformer-Pixel510@4x.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -204,8 +256,6 @@
 				<array/>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

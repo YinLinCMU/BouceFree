@@ -7,7 +7,7 @@
 		<key>finalAssets/Platformer-Pixel100@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 473}, {38, 38}}</string>
+			<string>{{39, 323}, {38, 38}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -30,10 +30,23 @@
 			<key>sourceSize</key>
 			<string>{28, 42}</string>
 		</dict>
+		<key>finalAssets/Platformer-Pixel17@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{483, 89}, {42, 22}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {42, 22}}</string>
+			<key>sourceSize</key>
+			<string>{42, 22}</string>
+		</dict>
 		<key>finalAssets/Platformer-Pixel284@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{187, 367}, {36, 30}}</string>
+			<string>{{39, 363}, {36, 30}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -59,7 +72,7 @@
 		<key>finalAssets/Platformer-Pixel372@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{115, 412}, {34, 42}}</string>
+			<string>{{1, 455}, {34, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -72,7 +85,7 @@
 		<key>finalAssets/Platformer-Pixel373@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{141, 456}, {34, 42}}</string>
+			<string>{{1, 411}, {34, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -82,10 +95,23 @@
 			<key>sourceSize</key>
 			<string>{34, 42}</string>
 		</dict>
+		<key>finalAssets/Platformer-Pixel510@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{483, 133}, {42, 14}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {42, 14}}</string>
+			<key>sourceSize</key>
+			<string>{42, 14}</string>
+		</dict>
 		<key>finalAssets/Platformer-Pixel848@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{115, 368}, {36, 42}}</string>
+			<string>{{1, 323}, {36, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +124,7 @@
 		<key>finalAssets/Platformer-Pixel849@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{152, 323}, {36, 42}}</string>
+			<string>{{1, 367}, {36, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -107,45 +133,6 @@
 			<string>{{0, 0}, {36, 42}}</string>
 			<key>sourceSize</key>
 			<string>{36, 42}</string>
-		</dict>
-		<key>finalAssets/alien.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{185, 411}, {33, 41}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {33, 41}}</string>
-			<key>sourceSize</key>
-			<string>{33, 41}</string>
-		</dict>
-		<key>finalAssets/alienYellow_walk1@4x.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{177, 456}, {34, 41}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {34, 41}}</string>
-			<key>sourceSize</key>
-			<string>{34, 41}</string>
-		</dict>
-		<key>finalAssets/alienYellow_walk2@4x.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{115, 323}, {35, 43}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {35, 43}}</string>
-			<key>sourceSize</key>
-			<string>{35, 43}</string>
 		</dict>
 		<key>finalAssets/background.png</key>
 		<dict>
@@ -163,7 +150,7 @@
 		<key>finalAssets/c1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{151, 412}, {32, 42}}</string>
+			<string>{{37, 411}, {32, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +163,7 @@
 		<key>finalAssets/c2.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{153, 367}, {32, 42}}</string>
+			<string>{{37, 455}, {32, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -185,162 +172,6 @@
 			<string>{{0, 0}, {32, 42}}</string>
 			<key>sourceSize</key>
 			<string>{32, 42}</string>
-		</dict>
-		<key>finalAssets/choco@4x.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{190, 323}, {35, 35}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {35, 35}}</string>
-			<key>sourceSize</key>
-			<string>{35, 35}</string>
-		</dict>
-		<key>finalAssets/p1_walk01.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{41, 473}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<true/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk02.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{91, 473}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<true/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk03.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 423}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk04.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{77, 323}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk05.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{77, 423}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk06.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 373}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk07.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{39, 373}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk08.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{77, 373}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk09.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{1, 323}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk10.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{39, 323}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
-		</dict>
-		<key>finalAssets/p1_walk11.png</key>
-		<dict>
-			<key>frame</key>
-			<string>{{39, 423}, {36, 48}}</string>
-			<key>offset</key>
-			<string>{0, 0}</string>
-			<key>rotated</key>
-			<false/>
-			<key>sourceColorRect</key>
-			<string>{{0, 0}, {36, 48}}</string>
-			<key>sourceSize</key>
-			<string>{36, 48}</string>
 		</dict>
 	</dict>
 	<key>metadata</key>

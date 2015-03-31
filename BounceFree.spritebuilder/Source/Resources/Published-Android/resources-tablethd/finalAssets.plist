@@ -7,7 +7,7 @@
 		<key>finalAssets/Platformer-Pixel100@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{147, 1285}, {152, 152}}</string>
+			<string>{{147, 1625}, {152, 152}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -43,6 +43,19 @@
 			<key>sourceSize</key>
 			<string>{168, 88}</string>
 		</dict>
+		<key>finalAssets/Platformer-Pixel26@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1285}, {168, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {168, 168}}</string>
+			<key>sourceSize</key>
+			<string>{168, 168}</string>
+		</dict>
 		<key>finalAssets/Platformer-Pixel284@4x.png</key>
 		<dict>
 			<key>frame</key>
@@ -72,7 +85,7 @@
 		<key>finalAssets/Platformer-Pixel372@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1795}, {136, 168}}</string>
+			<string>{{139, 1795}, {136, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -85,7 +98,7 @@
 		<key>finalAssets/Platformer-Pixel373@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1625}, {136, 168}}</string>
+			<string>{{1, 1795}, {136, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -111,7 +124,7 @@
 		<key>finalAssets/Platformer-Pixel848@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1285}, {144, 168}}</string>
+			<string>{{1, 1455}, {144, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -124,7 +137,7 @@
 		<key>finalAssets/Platformer-Pixel849@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1455}, {144, 168}}</string>
+			<string>{{1, 1625}, {144, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -150,7 +163,7 @@
 		<key>finalAssets/c1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{139, 1625}, {128, 168}}</string>
+			<string>{{147, 1455}, {128, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +176,7 @@
 		<key>finalAssets/c2.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{139, 1795}, {128, 168}}</string>
+			<string>{{171, 1285}, {128, 168}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -172,6 +185,19 @@
 			<string>{{0, 0}, {128, 168}}</string>
 			<key>sourceSize</key>
 			<string>{128, 168}</string>
+		</dict>
+		<key>finalAssets/laserBlueHorizontal@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{277, 1455}, {140, 140}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {140, 140}}</string>
+			<key>sourceSize</key>
+			<string>{140, 140}</string>
 		</dict>
 	</dict>
 	<key>metadata</key>

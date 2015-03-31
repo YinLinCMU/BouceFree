@@ -79,11 +79,11 @@
 				</array>
 				<array>
 					<real>0.0</real>
-					<real>22</real>
+					<real>42</real>
 				</array>
 				<array>
 					<real>42</real>
-					<real>22</real>
+					<real>42</real>
 				</array>
 				<array>
 					<real>42</real>
@@ -99,11 +99,11 @@
 					</array>
 					<array>
 						<real>42</real>
-						<real>22</real>
+						<real>42</real>
 					</array>
 					<array>
 						<real>0.0</real>
-						<real>22</real>
+						<real>42</real>
 					</array>
 					<array>
 						<real>0.0</real>
@@ -204,6 +204,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

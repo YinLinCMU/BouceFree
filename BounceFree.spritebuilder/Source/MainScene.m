@@ -132,9 +132,6 @@
     ghost.position = worldPosition;
 
 
-    fence.zOrder = DrawingOrderPipes;
-    [physicsNode addChild:fence];
-    [_fences addObject:fence];
     
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {

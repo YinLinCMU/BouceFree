@@ -78,8 +78,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>42</real>
+					<real>1.3069591522216797</real>
+					<real>41.569259643554688</real>
+				</array>
+				<array>
+					<real>11.752693176269531</real>
+					<real>31.844093322753906</real>
+				</array>
+				<array>
+					<real>32.85784912109375</real>
+					<real>31.844093322753906</real>
 				</array>
 				<array>
 					<real>42</real>
@@ -102,12 +110,40 @@
 						<real>42</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>42</real>
+						<real>32.85784912109375</real>
+						<real>31.844093322753906</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>11.752693176269531</real>
+						<real>31.844093322753906</real>
+					</array>
+					<array>
+						<real>1.3069591522216797</real>
+						<real>41.569259643554688</real>
 					</array>
 					<array>
 						<real>0.0</real>
 						<real>0.0</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>0.0</real>
+						<real>0.0</real>
+					</array>
+					<array>
+						<real>42</real>
+						<real>0.0</real>
+					</array>
+					<array>
+						<real>32.85784912109375</real>
+						<real>31.844093322753906</real>
+					</array>
+					<array>
+						<real>11.752693176269531</real>
+						<real>31.844093322753906</real>
 					</array>
 				</array>
 			</array>

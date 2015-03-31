@@ -60,7 +60,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>minus</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -78,12 +78,12 @@
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>42</real>
+					<real>-0.171875</real>
+					<real>39.800796508789062</real>
 				</array>
 				<array>
-					<real>28</real>
-					<real>42</real>
+					<real>27.1875</real>
+					<real>39.839859008789062</real>
 				</array>
 				<array>
 					<real>28</real>
@@ -98,12 +98,12 @@
 						<real>0.0</real>
 					</array>
 					<array>
-						<real>28</real>
-						<real>42</real>
+						<real>27.1875</real>
+						<real>39.839859008789062</real>
 					</array>
 					<array>
-						<real>0.0</real>
-						<real>42</real>
+						<real>-0.171875</real>
+						<real>39.800796508789062</real>
 					</array>
 					<array>
 						<real>0.0</real>

@@ -131,7 +131,7 @@
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
     
-    //fence.position = ccp(fence.position.x, fence.position.y);
+    fence.position = ccp(50, 50);
     [physicsNode addChild:fence];
     [_fences addObject:fence];
 

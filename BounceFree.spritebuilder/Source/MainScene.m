@@ -130,14 +130,11 @@
     
     Ghost *ghost = (Ghost *)[CCBReader load:@"Ghost"];
     ghost.position = worldPosition;
-    
-    fence.position = ccp(50, 50);
-    [physicsNode addChild:fence];
-    [_fences addObject:fence];
 
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
         //NSUInteger b = 20 + arc4random_uniform(260);
+
         obstacle.rotation = 180.0f;
         obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
         //obstacle.position = ccp(obstacle.position.x ,b);
@@ -149,6 +146,10 @@
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
+        
+        fence.zOrder = DrawingOrderPipes;
+        [physicsNode addChild:fence];
+        [_fences addObject:fence];
     }
     else if (r == 2 || r == 3 || r == 6){
         NSUInteger b = 20 + arc4random_uniform(260);

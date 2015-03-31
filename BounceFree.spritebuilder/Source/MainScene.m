@@ -126,8 +126,10 @@
 
     NSUInteger r = arc4random_uniform(6);
     if (r == 0) {
-        obstacle.rotation = 180.0f;
-        obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
+        NSUInteger b = 20 + arc4random_uniform(260);
+        //obstacle.rotation = 180.0f;
+        //obstacle.position = ccp(obstacle.position.x, obstacle.position.y+320);
+        obstacle.position = ccp(obstacle.position.x ,b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];

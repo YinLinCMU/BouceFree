@@ -271,7 +271,7 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair bonus:(CCSprite*)bonus ghost:(CCSprite*)ghost {
-    [bonus removeFromParentAndCleanup:YES];
+    [ghost removeFromParentAndCleanup:YES];
     return FALSE;
 }
 

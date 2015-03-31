@@ -149,9 +149,7 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
         
-        fence.zOrder = DrawingOrderPipes;
-        [physicsNode addChild:fence];
-        [_fences addObject:fence];
+        
         
     }
     else if (r == 2 || r == 3 || r == 6){
@@ -161,6 +159,10 @@
         [physicsNode addChild:coin];
         
         [_coins addObject:coin];
+        
+        fence.zOrder = DrawingOrderPipes;
+        [physicsNode addChild:fence];
+        [_fences addObject:fence];
     }
     else if (r == 4 || r == 5){
         NSUInteger b = 20 + arc4random_uniform(260);

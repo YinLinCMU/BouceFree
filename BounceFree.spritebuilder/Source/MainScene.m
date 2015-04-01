@@ -211,12 +211,12 @@
 
     CGSize size = [[CCDirector sharedDirector] viewSize];
     
-    if (character.position.y >= size.height*0.9f) {
-        character.position = ccp(character.position.x, 23);
+    if (character.position.y > size.height*0.9f) {
+        character.position = ccp(character.position.x, size.height*0.2f);
     }
 
-    if (character.position.y <= 22) {
-        character.position = ccp(character.position.x, 298);
+    if (character.position.y < size.height*0.2f) {
+        character.position = ccp(character.position.x, size.height*0.9f);
     }
 
     

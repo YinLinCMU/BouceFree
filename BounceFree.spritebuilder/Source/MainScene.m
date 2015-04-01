@@ -211,6 +211,7 @@
     NSLog(@"%.2f", character.position.y);
     if (character.position.y >= 290) {
         //[self gameOver];
+        NSLog("out");
         //character.position = ccp(character.position.x, 21);
         [character movetobottom];
     }

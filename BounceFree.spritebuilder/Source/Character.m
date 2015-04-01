@@ -38,8 +38,6 @@
     self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+50, self.physicsBody.velocity.y);
 }
 
--(void)movetobottom{
-    self.physicsNode.position = ccp(self.physicsNode.position.x, 50);
-}
+
 
 @end

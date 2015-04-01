@@ -209,7 +209,9 @@
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
 
-    if (character.position.y >= 297) {
+    CGSize size = [[CCDirector sharedDirector] viewSize];
+    
+    if (character.position.y >= size.height*0.9f) {
         character.position = ccp(character.position.x, 23);
     }
 

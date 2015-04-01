@@ -38,7 +38,7 @@
 }
 
 -(void)movetobottom{
-    self.physicsNode.position = ccp(self.physicsNode.position.x, 22);
+    self.physicsNode.position = ccp(self.physicsNode.position.x, 50);
 }
 
 @end

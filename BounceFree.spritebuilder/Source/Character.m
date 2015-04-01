@@ -15,7 +15,8 @@
 
 - (void)didLoadFromCCB
 {
-    self.position = ccp(115, 100);
+    CGSize size = [[CCDirector sharedDirector] viewSize];
+    self.position = ccp(size.width*.15f, size.width*.50f);//ccp(115, 100);
     self.zOrder = DrawingOrderHero;
     self.physicsBody.collisionType = @"character";
     b = 0;

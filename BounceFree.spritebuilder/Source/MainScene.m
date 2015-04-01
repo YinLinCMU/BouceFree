@@ -150,8 +150,7 @@
         [_obstacles addObject:obstacle];
     }
     else if (r == 2 || r == 3 || r == 6){
-        int max = 100;
-        double b = (double)arc4random()/1;
+        float b = ((float)rand()/RAND_MAX);
         NSLog(@"b=%f", b);
         coin.position = ccp(coin.position.x, size.height*b);
         coin.zOrder = DrawingOrderPipes;

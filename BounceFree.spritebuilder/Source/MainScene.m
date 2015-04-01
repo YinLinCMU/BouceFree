@@ -208,25 +208,12 @@
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
-    NSLog(@"%.2f", character.position.y);
-    if (character.position.y >= 296) {
-        //[self gameOver];
-        NSLog(@"out");
+
+    if (character.position.y >= 297) {
         character.position = ccp(character.position.x, 23);
-        //[character movetobottom];
     }
-        /*
-        Character * newcharacter = (Character*)[CCBReader load:@"Character"];
-        newcharacter.position = ccp(115, 21);
-        [physicsNode addChild:newcharacter];
-        [character removeFromParent];
-        character = newcharacter;
 
-
-        character.position = ccp(character.position.x, 21);
-    }*/
     if (character.position.y <= 22) {
-
         character.position = ccp(character.position.x, 298);
     }
 

@@ -12,4 +12,5 @@
 
 -(void) flap;
 -(void) speedup;
+-(void) movetobottom;
 @end

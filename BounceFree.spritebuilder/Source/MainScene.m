@@ -159,7 +159,7 @@
         
         
     }
-    else if (r == 5){//ghost
+    else if (r == 5 || r == 6){//ghost
         float b = ((float)rand()/RAND_MAX);
         ghost.position = ccp(ghost.position.x, size.height*b);
         obstacle.zOrder = DrawingOrderPipes;

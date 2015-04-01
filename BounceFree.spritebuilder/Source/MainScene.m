@@ -144,12 +144,12 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 1 || r == 2){
+    else if (r == 1 || r == 2){//cactus
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 4 || r == 3 || r == 5){
+    else if (r == 4 || r == 3){//coin
         float b = ((float)rand()/RAND_MAX);
         coin.position = ccp(coin.position.x, size.height*b);
         coin.zOrder = DrawingOrderPipes;
@@ -159,7 +159,13 @@
         
         
     }
-    /*
+    else if (r == 5){//ghost
+        float b = ((float)rand()/RAND_MAX);
+        ghost.position = ccp(ghost.position.x, size.height*b);
+        obstacle.zOrder = DrawingOrderPipes;
+        [physicsNode addChild:ghost];
+        [ghost fly];
+    }/*
     else{
         
         coin.position = ccp(coin.position.x, coin.position.y+280);

@@ -208,7 +208,7 @@
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
        _parallaxBackground.position = ccp(_parallaxBackground.position.x - (character.physicsBody.velocity.x * delta), _parallaxBackground.position.y);
-    
+    NSLog("y %s", character.position.y);
     if (character.position.y >= 290) {
         //[self gameOver];
         //character.position = ccp(character.position.x, 21);

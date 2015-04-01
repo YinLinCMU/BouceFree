@@ -144,14 +144,13 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 1){
+    else if (r == 1 || r == 2){
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 2 || r == 3 || r == 6){
+    else if (r == 4 || r == 3 || r == 5){
         float b = ((float)rand()/RAND_MAX);
-        NSLog(@"b=%f", b);
         coin.position = ccp(coin.position.x, size.height*b);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
@@ -160,13 +159,7 @@
         
         
     }
-    else if (r == 4 || r == 5){
-        NSUInteger b = 20 + arc4random_uniform(260);
-        ghost.position = ccp(ghost.position.x, b);
-        obstacle.zOrder = DrawingOrderPipes;
-        [physicsNode addChild:ghost];
-        [ghost fly];
-    }/*
+    /*
     else{
         
         coin.position = ccp(coin.position.x, coin.position.y+280);

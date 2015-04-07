@@ -110,7 +110,7 @@
     }
     //TODO: game over
 }
-
+/*
 - (void)start{
     // your code here
     character = (Character*)[CCBReader load:@"Character"];
@@ -119,7 +119,7 @@
     time = 0;
     timeSinceObstacle = 0.0f;
 }
-
+*/
 
 - (void)restart {
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];

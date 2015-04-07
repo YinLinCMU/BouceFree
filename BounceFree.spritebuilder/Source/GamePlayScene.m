@@ -4,8 +4,14 @@
 
 @implementation GamePlayScene
 
+
 - (void)initialize////////////
 {
+    CCScene *scene = [CCBReader loadAsScene:@"WelcomeScene"];
+    [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void) start{
     // your code here
     character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];

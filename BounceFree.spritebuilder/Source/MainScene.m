@@ -44,6 +44,7 @@
     
     BOOL _gameOver;
     CCLabelTTF *_scoreLabel;
+    CCLabelTTF *_scoreTotal;
     CCLabelTTF *_nameLabel;
     int cnt;
     int points;
@@ -63,6 +64,7 @@
     _fences = [NSMutableArray array];
     points = 0;
     _scoreLabel.visible = true;
+    _scoreTotal.visible = true;
     
     [super initialize];
     character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
@@ -184,6 +186,9 @@
 {
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreLabel.visible = true;
+    
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
+    _scoreTotal.visible = true;
 }
 
 - (void)update:(CCTime)delta
@@ -298,6 +303,11 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
+    NSString *total = [_scoreTotal string];
+    if (points > total.intValue) {
+         _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
+    }
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
     [self gameOver];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

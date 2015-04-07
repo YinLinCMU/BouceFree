@@ -11,14 +11,6 @@
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 
-- (void) start{
-    // your code here
-    character = (Character*)[CCBReader load:@"Character"];
-    [physicsNode addChild:character];
-    [self addObstacle];
-    time = 0;
-    timeSinceObstacle = 0.0f;
-}
 
 -(void)update:(CCTime)delta//////////////
 {

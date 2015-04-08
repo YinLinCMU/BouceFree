@@ -48,6 +48,7 @@
     CCLabelTTF *_nameLabel;
     int cnt;
     int points;
+    int highScore;
 }
 
 
@@ -289,7 +290,11 @@
     [bonus removeFromParentAndCleanup:YES];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-
+    highScore = points;
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:highScore] forKey:@"HighScore"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     return FALSE;
 }
 
@@ -304,11 +309,10 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
-    NSString *total = [_scoreTotal string];
-    if (points > total.intValue) {
-         _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
-    }
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
+    highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+
+
     [self gameOver];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

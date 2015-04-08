@@ -5,10 +5,9 @@
 @implementation GamePlayScene
 
 
-- (void)didLoadFromCCB////////////
+- (void)initialize////////////
 {
-    CCScene *scene = [CCBReader loadAsScene:@"WelcomeScene"];
-    [[CCDirector sharedDirector] replaceScene:scene];
+    
 }
 
 

@@ -69,13 +69,13 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
-    if ([prefs objectForKey:@"score"] != NULL) {//highscore reload
-        highScore = (int)[prefs integerForKey:@"score"];
+    if ([prefs objectForKey:@"score0"] != NULL) {//highscore reload
+        highScore = (int)[prefs integerForKey:@"score0"];
         NSLog(@"!=null");
     }
     else{
         highScore = points;
-        [prefs setInteger:highScore forKey:@"score"];
+        [prefs setInteger:highScore forKey:@"score0"];
         [prefs synchronize];
         NSLog(@"==null");
     }
@@ -299,13 +299,13 @@
     }
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    currentScore = (int)[prefs integerForKey:@"score"];
+    currentScore = (int)[prefs integerForKey:@"score0"];
     //NSLog(@"high = %d, points = %d", highScore, points);
     if (points > currentScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
         currentScore = points;
-        [prefs setInteger:currentScore forKey:@"score"];//write
+        [prefs setInteger:currentScore forKey:@"score0"];//write
         [prefs synchronize];
     }
     

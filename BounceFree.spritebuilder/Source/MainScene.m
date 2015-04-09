@@ -65,6 +65,9 @@
     _coins = [NSMutableArray array];
     _fences = [NSMutableArray array];
     points = 0;
+    highScore = points;
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    highScore = [prefs integerForKey:@"score"];
     _scoreLabel.visible = true;
     _scoreTotal.visible = true;
     

@@ -192,6 +192,7 @@
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:currentScore forKey:@"score"];
+    highScore = points;
     if (currentScore > highScore) {
         highScore = currentScore;
     }

@@ -285,14 +285,14 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:highScore forKey:@"score"];//call the highest score
-    
+    NSLog(@"high = %d, points = %d", highScore, points);
     if (points > highScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
-        highScore = [prefs integerForKey:@"score"];
+        highScore = (int)[prefs integerForKey:@"score"];
     }
     
-    NSLog(@"high = %d, points = %d", highScore, points);
+    
     
 }
 

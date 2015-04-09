@@ -316,11 +316,9 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     currentScore = [prefs integerForKey:@"score"];
 
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:highScore] forKey:@"highScore"];
+    //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     [self gameOver];
-    //[minus removeFromParentAndCleanup:YES];
-    //points--;
-    //_scoreLabel.string = [NSString stringWithFormat:@"%d", points];
+    
     return TRUE;
 }
 

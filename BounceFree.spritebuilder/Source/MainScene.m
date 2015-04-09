@@ -190,13 +190,7 @@
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreLabel.visible = true;
 
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:currentScore forKey:@"score"];
-    highScore = points;
-    if (currentScore > highScore) {
-        highScore = currentScore;
-    }
-    NSLog(@"high = %d, points = %d", highScore, points);
+    
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     _scoreTotal.visible = true;
     
@@ -286,6 +280,16 @@
         }
     }
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:currentScore forKey:@"score"];
+    if (points > currentScore) {
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        points = [prefs integerForKey:@"score"];
+    }
+    [prefs setInteger:currentScore forKey:@"score"];
+    highScore = currentScore;
+    NSLog(@"high = %d, points = %d", highScore, points);
+    
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
@@ -318,10 +322,7 @@
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
     //highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
 
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    highScore = [prefs integerForKey:@"score"];
-    NSLog(@"high = %d, points = %d", highScore, points);
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     [self gameOver];
     

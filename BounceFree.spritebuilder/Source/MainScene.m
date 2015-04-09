@@ -188,9 +188,10 @@
 {
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreLabel.visible = true;
-    
-    //_scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
-    //_scoreTotal.visible = true;
+
+    highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"highScore"] unsignedLongLongValue];
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    _scoreTotal.visible = true;
 }
 
 - (void)update:(CCTime)delta
@@ -290,11 +291,7 @@
     [bonus removeFromParentAndCleanup:YES];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    highScore = points;
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:highScore] forKey:@"HighScore"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-     highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    
     return FALSE;
 }
 
@@ -309,10 +306,10 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
-    highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    //highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
 
 
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:highScore] forKey:@"highScore"];
     [self gameOver];
     //[minus removeFromParentAndCleanup:YES];
     //points--;

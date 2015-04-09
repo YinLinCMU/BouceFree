@@ -83,6 +83,7 @@
     NSLog(@"high = %d",highScore);
     
     _scoreLabel.visible = true;
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     _scoreTotal.visible = true;
     
     [super initialize];

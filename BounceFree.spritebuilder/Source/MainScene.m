@@ -189,9 +189,6 @@
 {
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreLabel.visible = true;
-    
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
-    _scoreTotal.visible = true;
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:currentScore forKey:@"score"];
@@ -200,6 +197,8 @@
         highScore = currentScore;
     }
     NSLog(@"high = %d, points = %d", highScore, points);
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    _scoreTotal.visible = true;
     
 }
 
@@ -293,6 +292,7 @@
     [minus removeFromParentAndCleanup:YES];
     points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     return FALSE;
 }
 
@@ -301,7 +301,7 @@
     [bonus removeFromParentAndCleanup:YES];
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
-    
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     return FALSE;
 }
 
@@ -321,6 +321,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     highScore = [prefs integerForKey:@"score"];
     NSLog(@"high = %d, points = %d", highScore, points);
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     [self gameOver];
     

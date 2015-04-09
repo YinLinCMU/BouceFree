@@ -66,12 +66,12 @@
     _fences = [NSMutableArray array];
     points = 0;
     highScore = points;
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:highScore forKey:@"score"];
-    [prefs synchronize];
+    //NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    //[prefs setInteger:highScore forKey:@"score"];
+    //[prefs synchronize];
     
-    currentScore = (int)[prefs integerForKey:@"score"];
-    NSLog(@"%d",currentScore);
+    //currentScore = (int)[prefs integerForKey:@"score"];
+    //NSLog(@"%d",currentScore);
     
     _scoreLabel.visible = true;
     _scoreTotal.visible = true;

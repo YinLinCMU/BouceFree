@@ -70,7 +70,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
     if ([prefs objectForKey:@"score"] != NULL) {//highscore reload
-        points = (int)[prefs integerForKey:@"score"];
+        highScore = (int)[prefs integerForKey:@"score"];
         NSLog(@"!=null");
     }
     else{

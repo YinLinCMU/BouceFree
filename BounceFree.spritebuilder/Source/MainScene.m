@@ -50,6 +50,7 @@
     int points;
     int highScore;
     int currentScore;
+    int tmp;
 }
 
 
@@ -65,13 +66,20 @@
     _coins = [NSMutableArray array];
     _fences = [NSMutableArray array];
     points = 0;
-    highScore = points;
-    //NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    //[prefs setInteger:highScore forKey:@"score"];
-    //[prefs synchronize];
     
-    //currentScore = (int)[prefs integerForKey:@"score"];
-    //NSLog(@"%d",currentScore);
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+
+    if ([prefs objectForKey:@"score"] != NULL) {//highscore reload
+        highScore = (int)[prefs integerForKey:@"score"];
+    }
+    else{
+        highScore = points;
+        [prefs setInteger:highScore forKey:@"score"];
+        [prefs synchronize];
+    }
+    
+    currentScore = (int)[prefs integerForKey:@"score"];
+    NSLog(@"%d",currentScore);
     
     _scoreLabel.visible = true;
     _scoreTotal.visible = true;
@@ -295,7 +303,7 @@
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
         currentScore = points;
-        [prefs setInteger:currentScore forKey:@"score"];
+        [prefs setInteger:currentScore forKey:@"score"];//write
         [prefs synchronize];
     }
     

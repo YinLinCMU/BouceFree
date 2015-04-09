@@ -196,7 +196,7 @@
     if (currentScore > highScore) {
         highScore = currentScore;
     }
-    NSLog(@"%d", highScore);
+    NSLog(@"high = %d, points = %d", highScore, points);
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     _scoreTotal.visible = true;
 }

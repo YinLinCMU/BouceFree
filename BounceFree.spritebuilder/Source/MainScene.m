@@ -81,7 +81,7 @@
     }
     
     currentScore = (int)[prefs integerForKey:@"score"];
-    NSLog(@"%d",highScore);
+    NSLog(@"high = %d",highScore);
     
     _scoreLabel.visible = true;
     _scoreTotal.visible = true;

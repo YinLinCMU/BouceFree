@@ -304,9 +304,11 @@
     if (points > currentScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
-        currentScore = points;
-        [prefs setInteger:currentScore forKey:@"score0"];//write
+        [prefs setInteger:highScore forKey:@"score0"];//write
         [prefs synchronize];
+        _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+        _scoreTotal.visible = true;
+        NSLog(@"point=%d, high=%d", points, highScore);
     }
     
     

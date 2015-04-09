@@ -68,6 +68,10 @@
     highScore = 2;
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     highScore = [prefs integerForKey:@"score"];
+    
+    [prefs setInteger:currentScore forKey:@"score"];
+    NSLog(@"%d",currentScore);
+    
     _scoreLabel.visible = true;
     _scoreTotal.visible = true;
     

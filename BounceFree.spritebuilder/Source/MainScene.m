@@ -65,7 +65,7 @@
     _coins = [NSMutableArray array];
     _fences = [NSMutableArray array];
     points = 0;
-    highScore = 2;
+    highScore = points;
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:highScore forKey:@"score"];
     [prefs synchronize];
@@ -289,12 +289,14 @@
     }
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:highScore forKey:@"score"];//call the highest score
+    currentScore = (int)[prefs integerForKey:@"score"];
     //NSLog(@"high = %d, points = %d", highScore, points);
-    if (points > highScore) {
+    if (points > currentScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
-        highScore = (int)[prefs integerForKey:@"score"];
+        currentScore = points;
+        [prefs setInteger:currentScore forKey:@"score"];
+        [prefs synchronize];
     }
     
     

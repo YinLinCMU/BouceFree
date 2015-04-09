@@ -65,7 +65,7 @@
     _obstacles = [NSMutableArray array];
     _coins = [NSMutableArray array];
     _fences = [NSMutableArray array];
-    points = 0;
+    points = 5;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
@@ -80,7 +80,6 @@
         NSLog(@"==null");
     }
     
-    currentScore = (int)[prefs integerForKey:@"score"];
     NSLog(@"high = %d",highScore);
     
     _scoreLabel.visible = true;

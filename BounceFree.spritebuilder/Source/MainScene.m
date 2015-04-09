@@ -65,7 +65,7 @@
     _obstacles = [NSMutableArray array];
     _coins = [NSMutableArray array];
     _fences = [NSMutableArray array];
-    points = 5;
+    points = 0;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 

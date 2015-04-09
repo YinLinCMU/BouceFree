@@ -67,9 +67,10 @@
     points = 0;
     highScore = 2;
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    highScore = [prefs integerForKey:@"score"];
+    [prefs setInteger:highScore forKey:@"score"];
+    [prefs synchronize];
     
-    [prefs setInteger:currentScore forKey:@"score"];
+    currentScore = (int)[prefs integerForKey:@"score"];
     NSLog(@"%d",currentScore);
     
     _scoreLabel.visible = true;
@@ -289,7 +290,7 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:highScore forKey:@"score"];//call the highest score
-    NSLog(@"high = %d, points = %d", highScore, points);
+    //NSLog(@"high = %d, points = %d", highScore, points);
     if (points > highScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;

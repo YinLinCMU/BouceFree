@@ -314,7 +314,7 @@
     //highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    currentScore = [prefs integerForKey:@"score"];
+    points = [prefs integerForKey:@"score"];
 
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     [self gameOver];

@@ -189,6 +189,9 @@
 {
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreLabel.visible = true;
+    
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
+    _scoreTotal.visible = true;
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:currentScore forKey:@"score"];
@@ -197,8 +200,7 @@
         highScore = currentScore;
     }
     NSLog(@"high = %d, points = %d", highScore, points);
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
-    _scoreTotal.visible = true;
+    
 }
 
 - (void)update:(CCTime)delta

@@ -203,7 +203,7 @@
 
 - (void)update:(CCTime)delta
 {
-    NSLog(@"high = %d, points = %d", highScore, points);
+    
     _sinceTouch += delta;
     
     //character.rotation = clampf(character.rotation, -30.f, 90.f);
@@ -317,7 +317,7 @@
     //highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
 
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    points = [prefs integerForKey:@"score"];
+    highScore = [prefs integerForKey:@"score"];
     NSLog(@"high = %d, points = %d", highScore, points);
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     [self gameOver];

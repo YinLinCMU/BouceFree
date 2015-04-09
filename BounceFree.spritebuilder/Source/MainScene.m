@@ -197,7 +197,7 @@
         highScore = currentScore;
     }
     NSLog(@"high = %d, points = %d", highScore, points);
-    _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    _scoreTotal.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.visible = true;
 }
 

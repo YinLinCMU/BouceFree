@@ -281,13 +281,13 @@
     }
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:currentScore forKey:@"score"];
-    if (points > currentScore) {
+    [prefs setInteger:highScore forKey:@"myScoreInt"];//call the highest score
+    
+    if (points > highScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         points = [prefs integerForKey:@"score"];
     }
-    [prefs setInteger:currentScore forKey:@"score"];
-    highScore = currentScore;
+    
     NSLog(@"high = %d, points = %d", highScore, points);
     
 }

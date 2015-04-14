@@ -9,5 +9,5 @@
 #import "CCScene.h"
 
 @interface PlaySound : CCScene
-- (void)bouceSound
+- (void)bouceSound;
 @end

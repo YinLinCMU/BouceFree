@@ -10,7 +10,7 @@
 #import "Obstacle.h"
 #import "Coin.h"
 #import "Ghost.h"
-#import "Fence.h"
+
 
 @interface CGPointObject : NSObject{
     CGPoint _ratio;
@@ -38,7 +38,7 @@
     
     NSMutableArray *_coins;
     
-    NSMutableArray *_fences;
+
     
     CCButton *_restartButton;
     
@@ -64,7 +64,7 @@
     
     _obstacles = [NSMutableArray array];
     _coins = [NSMutableArray array];
-    _fences = [NSMutableArray array];
+
     points = 0;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -141,8 +141,7 @@
     CGPoint worldPosition = [physicsNode convertToNodeSpace:screenPosition];
     obstacle.position = worldPosition;
     
-    Fence *fence = (Fence *)[CCBReader load:@"Fence"];
-    fence.position = worldPosition;
+   
     
     Coin *coin = (Coin *)[CCBReader load:@"Coin"];
     coin.position = worldPosition;

@@ -26,8 +26,6 @@
 }
 
 - (void)bouceSound {
-    NSLog(@"bouncesound");
-    //[self play:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
-    
+    [self play:@"bounce" :@".wav"];
 }
 @end

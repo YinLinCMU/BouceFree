@@ -49,7 +49,7 @@
     [character speedup];
 }
 
-- (void)play :(NSString *)fName :(NSString *) ext :(NSString *)subpath{
+- (void)play :(NSString *)fName :(NSString *) ext{
     SystemSoundID audioEffect;
     NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
     NSLog(@"path = %@",path);

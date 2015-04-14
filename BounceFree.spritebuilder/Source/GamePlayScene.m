@@ -40,7 +40,7 @@
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
     //[bouncesound bouceSound];
-    NSLog(@"%@",bouncesound);
+    //NSLog(@"%@",bouncesound);
     [self play:@"bounce" :@".wav": @"Audio"];
     
 }
@@ -62,6 +62,6 @@
     else {
         NSLog(@"error, file not found: %@", path);
     }
-    NSLog(@"playsound");
+   // NSLog(@"playsound");
 }
 @end

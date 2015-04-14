@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323C0DFE1ADD93DF00CBB793 /* PlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C0DFD1ADD93DF00CBB793 /* PlaySound.m */; };
 		327461B11AC22D70006FF655 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 327461AE1AC22D70006FF655 /* Coin.m */; };
 		327461B21AC22D70006FF655 /* Ghost.m in Sources */ = {isa = PBXBuildFile; fileRef = 327461B01AC22D70006FF655 /* Ghost.m */; };
-		329C076A1ACB48E200E85D60 /* Fence.m in Sources */ = {isa = PBXBuildFile; fileRef = 329C07691ACB48E200E85D60 /* Fence.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -76,12 +76,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323C0DFC1ADD93DF00CBB793 /* PlaySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaySound.h; path = Source/PlaySound.h; sourceTree = "<group>"; };
+		323C0DFD1ADD93DF00CBB793 /* PlaySound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaySound.m; path = Source/PlaySound.m; sourceTree = "<group>"; };
 		327461AD1AC22D70006FF655 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coin.h; path = Source/Coin.h; sourceTree = "<group>"; };
 		327461AE1AC22D70006FF655 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coin.m; path = Source/Coin.m; sourceTree = "<group>"; };
 		327461AF1AC22D70006FF655 /* Ghost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ghost.h; path = Source/Ghost.h; sourceTree = "<group>"; };
 		327461B01AC22D70006FF655 /* Ghost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ghost.m; path = Source/Ghost.m; sourceTree = "<group>"; };
-		329C07681ACB48E200E85D60 /* Fence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fence.h; path = Source/Fence.h; sourceTree = "<group>"; };
-		329C07691ACB48E200E85D60 /* Fence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fence.m; path = Source/Fence.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -167,9 +167,9 @@
 				BCF66F7519563563004691FD /* GamePlayScene.m */,
 				BCF66F7819563563004691FD /* MainScene.h */,
 				BCF66F7919563563004691FD /* MainScene.m */,
-				329C07681ACB48E200E85D60 /* Fence.h */,
-				329C07691ACB48E200E85D60 /* Fence.m */,
 				BCF66F7A19563563004691FD /* Obstacle.h */,
+				323C0DFC1ADD93DF00CBB793 /* PlaySound.h */,
+				323C0DFD1ADD93DF00CBB793 /* PlaySound.m */,
 				BCF66F7B19563563004691FD /* Obstacle.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
@@ -400,11 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329C076A1ACB48E200E85D60 /* Fence.m in Sources */,
 				BCF66F7D19563563004691FD /* GamePlayScene.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BCF66F8019563563004691FD /* Obstacle.m in Sources */,
+				323C0DFE1ADD93DF00CBB793 /* PlaySound.m in Sources */,
 				BCF66F7C19563563004691FD /* Character.m in Sources */,
 				327461B11AC22D70006FF655 /* Coin.m in Sources */,
 				BCF66F7F19563563004691FD /* MainScene.m in Sources */,

@@ -8,9 +8,10 @@
 
 #import "Character.h"
 #import "GamePlayScene.h"
-
+#import "PlaySound.h"
 @implementation Character{
     int b;
+    PlaySound *bouncesound;
 }
 
 - (void)didLoadFromCCB
@@ -33,6 +34,8 @@
     else{
         self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -100);
     }
+    [bouncesound bouceSound];
+    
 }
 -(void)speedup{
     self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+50, self.physicsBody.velocity.y);

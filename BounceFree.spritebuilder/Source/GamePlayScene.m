@@ -41,7 +41,7 @@
     [character flap];
     //[bouncesound bouceSound];
     NSLog(@"%@",bouncesound);
-    [self play:@"/Users/yinlin/Desktop/s15/ios/finalproj/Audio/test" :@"aif"];
+    [self play:@"test" :@"aif"];
     
 }
 

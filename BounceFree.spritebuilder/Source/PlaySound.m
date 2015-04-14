@@ -10,7 +10,7 @@
 
 @implementation PlaySound
 
-- (void)playSound :(NSString *)fName :(NSString *) ext{
+- (void)PlaySound :(NSString *)fName :(NSString *) ext{
     SystemSoundID audioEffect;
     NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
     if ([[NSFileManager defaultManager] fileExistsAtPath : path]) {
@@ -24,6 +24,6 @@
 }
 
 - (void)bouceSound {
-    [self playSound:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
+    [self PlaySound:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
 }
 @end

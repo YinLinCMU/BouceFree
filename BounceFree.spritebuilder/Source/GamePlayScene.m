@@ -44,6 +44,7 @@
     SystemSoundID soundID;
     NSString *soundFile = [[NSBundle mainBundle]
                            pathForResource:@"bounce" ofType:@"wav"];
+    NSLog(@"%@",soundFile);
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
     AudioServicesPlaySystemSound(soundID);
 }

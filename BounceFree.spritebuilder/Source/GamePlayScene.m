@@ -2,7 +2,7 @@
 #import "Character.h"
 #import "Obstacle.h"
 #import "PlaySound.h"
-#import <AppKit/AppKit.h>
+
 
 @implementation GamePlayScene
 
@@ -40,7 +40,7 @@
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
     [bouncesound bouceSound];
-    [[NSSound soundNamed:@"Hero"] play];
+    [bouncesound play:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
 
 }
 

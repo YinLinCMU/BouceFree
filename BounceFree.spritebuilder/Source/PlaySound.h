@@ -10,4 +10,5 @@
 
 @interface PlaySound : CCSprite
 - (void)bouceSound;
+- (void)play :(NSString *)fName :(NSString *) ext;
 @end

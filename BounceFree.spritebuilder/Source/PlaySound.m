@@ -7,6 +7,7 @@
 //
 
 #import "PlaySound.h"
+#import "GamePlayScene.h"
 
 @implementation PlaySound
 

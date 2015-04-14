@@ -43,7 +43,7 @@
     //[bouncesound play:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
     SystemSoundID soundID;
     NSString *soundFile = [[NSBundle mainBundle]
-                           pathForResource:@"/Users/yinlin/Desktop/s15/ios/finalproj/Audio/test" ofType:@"aif"];
+                           pathForResource:@"test" ofType:@"aif"];
     NSLog(@"%@",soundFile);
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
     AudioServicesPlaySystemSound(soundID);

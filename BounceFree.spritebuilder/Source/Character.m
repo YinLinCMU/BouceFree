@@ -34,7 +34,6 @@
     else{
         self.physicsBody.velocity = ccp(self.physicsBody.velocity.x,  -100);
     }
-    NSLog(@"flap");
     
 }
 -(void)speedup{

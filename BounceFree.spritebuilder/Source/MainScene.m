@@ -51,6 +51,8 @@
     int highScore;
     int currentScore;
     int tmp;
+    
+    
 }
 
 

@@ -1,9 +1,9 @@
 #import "GamePlayScene.h"
 #import "Character.h"
 #import "Obstacle.h"
-
+#import "PlaySound.h"
 @implementation GamePlayScene
-
+PlaySound *bouncesound;
 
 
 - (void) initialize{
@@ -13,6 +13,7 @@
     [self addObstacle];
     time = 0;
     timeSinceObstacle = 0.0f;
+    
 }
 
 -(void)update:(CCTime)delta//////////////
@@ -35,6 +36,7 @@
 // put new methods here
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
+    [bouncesound bouceSound];
 }
 
 -(void)speedup{

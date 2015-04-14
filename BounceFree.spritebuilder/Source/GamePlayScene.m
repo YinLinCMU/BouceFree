@@ -2,7 +2,7 @@
 #import "Character.h"
 #import "Obstacle.h"
 #import "PlaySound.h"
-#import "AppKit";
+#import AppKit;
 
 @implementation GamePlayScene
 

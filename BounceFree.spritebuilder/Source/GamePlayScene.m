@@ -39,10 +39,7 @@
 // put new methods here
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
-    //[bouncesound bouceSound];
-    //NSLog(@"%@",bouncesound);
     [self play:@"bounce" :@".wav"];
-    
 }
 
 -(void)speedup{
@@ -52,7 +49,7 @@
 - (void)play :(NSString *)fName :(NSString *) ext{
     SystemSoundID audioEffect;
     NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
-    NSLog(@"path = %@",path);
+
     if ([[NSFileManager defaultManager] fileExistsAtPath : path]) {
         NSURL *pathURL = [NSURL fileURLWithPath: path];
 
@@ -62,6 +59,6 @@
     else {
         NSLog(@"error, file not found: %@", path);
     }
-   // NSLog(@"playsound");
+
 }
 @end

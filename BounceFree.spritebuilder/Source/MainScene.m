@@ -316,6 +316,7 @@
     points -= 2;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    [super play:@"obstacle" :@".wav"];
     return FALSE;
 }
 
@@ -325,6 +326,7 @@
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    [super play:@"coin" :@".wav"];
     return FALSE;
 }
 
@@ -343,6 +345,7 @@
 
     
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
+    [super play:@"die" :@".wav"];
     [self gameOver];
     
     return TRUE;

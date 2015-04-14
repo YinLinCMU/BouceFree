@@ -40,6 +40,7 @@
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
     [bouncesound bouceSound];
+    NSLog(@"%@",bouncesound);
 
     
 }

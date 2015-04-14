@@ -39,14 +39,9 @@
 // put new methods here
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{/////////
     [character flap];
-    //[bouncesound bouceSound];
-    //[bouncesound play:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
-    SystemSoundID soundID;
-    NSString *soundFile = [[NSBundle mainBundle]
-                           pathForResource:@"test" ofType:@"aif"];
-    NSLog(@"%@",soundFile);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundID);
-    AudioServicesPlaySystemSound(soundID);
+    [bouncesound bouceSound];
+
+    
 }
 
 -(void)speedup{

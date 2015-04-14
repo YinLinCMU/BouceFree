@@ -8,7 +8,7 @@
 
 #import "CCNode.h"
 
-@interface PlaySound : CCSprite
+@interface PlaySound : CCNode
 - (void)bouceSound;
 - (void)play :(NSString *)fName :(NSString *) ext;
 @end

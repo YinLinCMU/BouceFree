@@ -53,7 +53,7 @@
     SystemSoundID audioEffect;
     NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
     NSLog(@"path = %@",fName);
-    if ([[NSFileManager defaultManager] fileExistsAtPath : @"bounce"]) {
+    if ([[NSFileManager defaultManager] fileExistsAtPath : @"bounce.wav"]) {
         NSURL *pathURL = [NSURL fileURLWithPath: path];
 
         AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &audioEffect);

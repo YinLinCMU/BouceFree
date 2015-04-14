@@ -3,7 +3,7 @@
 #import "Obstacle.h"
 #import "PlaySound.h"
 @implementation GamePlayScene
-PlaySound *bouncesound;
+
 
 
 - (void) initialize{

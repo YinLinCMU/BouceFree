@@ -54,7 +54,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
     NSLog(@"path = %@",fName);
     if ([[NSFileManager defaultManager] fileExistsAtPath : path]) {
-        NSURL *pathURL = [NSURL fileURLWithPath: path];
+        //NSURL *pathURL = [NSURL fileURLWithPath: path];
+        NSURL *pathURL = [[NSBundle mainBundle] URLForResource:@"bounce" withExtension:@".wav"];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef) pathURL, &audioEffect);
         AudioServicesPlaySystemSound(audioEffect);
     }

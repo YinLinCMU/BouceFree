@@ -8,11 +8,11 @@
 
  + Week1: Add looping bounce
 
- Instead of creating barriers, loop the movement of character from top to bottom when it is out of bound(Finished.)
+ Instead of creating barriers, loop the movement of character from top to bottom when it is out of bound.(Finished)
 
  + Week2: Add Scores
 
- Now the user can see the score of their progress(Finished.)
+ Now the user can see the score of their progress.(Finished)
 
  + Week3: Add sound effects
  

@@ -41,7 +41,7 @@
     [character flap];
     //[bouncesound bouceSound];
     NSLog(@"%@",bouncesound);
-    [self play:@"bounce" :@".wav"];
+    [self play:@"bounce" :@".wav": @"Audio"];
     
 }
 
@@ -49,9 +49,9 @@
     [character speedup];
 }
 
-- (void)play :(NSString *)fName :(NSString *) ext{
+- (void)play :(NSString *)fName :(NSString *) ext :(NSString *)subpath{
     SystemSoundID audioEffect;
-    NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext];
+    NSString *path = [[NSBundle mainBundle] pathForResource : fName ofType :ext inDirectory:(NSString *)subpath];
     NSLog(@"path = %@",path);
     if ([[NSFileManager defaultManager] fileExistsAtPath : path]) {
         NSURL *pathURL = [NSURL fileURLWithPath: path];

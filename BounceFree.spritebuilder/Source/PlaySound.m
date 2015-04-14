@@ -21,10 +21,11 @@
     else {
         NSLog(@"error, file not found: %@", path);
     }
+    NSLog(@"playsound");
 }
 
 - (void)bouceSound {
     [self playSound:@"/Users/yinlin/Desktop/s15/ios/finalproj/sound" :@"bounce.wav"];
-    NSLog(@"sound");
+    NSLog(@"bouncesound");
 }
 @end

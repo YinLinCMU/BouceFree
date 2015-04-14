@@ -41,7 +41,7 @@
     [character flap];
     //[bouncesound bouceSound];
     NSLog(@"%@",bouncesound);
-    [self play:@"Audio.bounce" :@"wav"];
+    [self play:@"bounce" :@"wav"];
     
 }
 

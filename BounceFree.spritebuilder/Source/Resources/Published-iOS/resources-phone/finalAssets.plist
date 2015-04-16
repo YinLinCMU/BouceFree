@@ -7,7 +7,7 @@
 		<key>finalAssets/Platformer-Pixel100@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{39, 411}, {38, 38}}</string>
+			<string>{{75, 455}, {38, 38}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -33,7 +33,7 @@
 		<key>finalAssets/Platformer-Pixel17@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{483, 89}, {42, 22}}</string>
+			<string>{{483, 129}, {42, 22}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -59,7 +59,7 @@
 		<key>finalAssets/Platformer-Pixel284@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{73, 367}, {36, 30}}</string>
+			<string>{{117, 323}, {36, 30}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -82,10 +82,36 @@
 			<key>sourceSize</key>
 			<string>{42, 26}</string>
 		</dict>
+		<key>finalAssets/Platformer-Pixel344@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{483, 89}, {38, 24}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {38, 24}}</string>
+			<key>sourceSize</key>
+			<string>{38, 24}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel345@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{111, 367}, {36, 34}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 34}}</string>
+			<key>sourceSize</key>
+			<string>{36, 34}</string>
+		</dict>
 		<key>finalAssets/Platformer-Pixel372@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{37, 455}, {34, 42}}</string>
+			<string>{{39, 411}, {34, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +124,7 @@
 		<key>finalAssets/Platformer-Pixel373@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 455}, {34, 42}}</string>
+			<string>{{75, 411}, {34, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -111,7 +137,7 @@
 		<key>finalAssets/Platformer-Pixel510@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{483, 133}, {42, 14}}</string>
+			<string>{{483, 173}, {42, 14}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +189,7 @@
 		<key>finalAssets/c1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{39, 367}, {32, 42}}</string>
+			<string>{{77, 367}, {32, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +202,7 @@
 		<key>finalAssets/c2.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{45, 323}, {32, 42}}</string>
+			<string>{{83, 323}, {32, 42}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -186,10 +212,23 @@
 			<key>sourceSize</key>
 			<string>{32, 42}</string>
 		</dict>
+		<key>finalAssets/ghost_die.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{39, 455}, {34, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {34, 42}}</string>
+			<key>sourceSize</key>
+			<string>{34, 42}</string>
+		</dict>
 		<key>finalAssets/laserBlueHorizontal@4x.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{79, 323}, {35, 35}}</string>
+			<string>{{111, 405}, {35, 35}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -198,6 +237,45 @@
 			<string>{{0, 0}, {35, 35}}</string>
 			<key>sourceSize</key>
 			<string>{35, 35}</string>
+		</dict>
+		<key>finalAssets/yellow_jump1@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{45, 323}, {36, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 42}}</string>
+			<key>sourceSize</key>
+			<string>{36, 42}</string>
+		</dict>
+		<key>finalAssets/yellow_jump2@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 455}, {36, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 42}}</string>
+			<key>sourceSize</key>
+			<string>{36, 42}</string>
+		</dict>
+		<key>finalAssets/yellow_jump3@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{39, 367}, {36, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 42}}</string>
+			<key>sourceSize</key>
+			<string>{36, 42}</string>
 		</dict>
 	</dict>
 	<key>metadata</key>

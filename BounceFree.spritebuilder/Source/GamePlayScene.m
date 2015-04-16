@@ -30,9 +30,18 @@
         time++;
     }
     
-    if(time%10 == 0){
-       // [character speedup];
-    }
+   // character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, character.physicsBody.velocity.y);
+    
+    //
+//    if(time%2 == 0){
+//        NSLog(@"here");
+        character.physicsBody.velocity = ccp(character.physicsBody.velocity.x + 0.1f, character.physicsBody.velocity.y);
+
+    _speedLabel.string = [NSString stringWithFormat:@"%.1f", character.physicsBody.velocity.x];
+    _speedLabel.visible = true;
+//        //[character speedup];
+//        NSLog(@"%f",character.physicsBody.velocity.x);
+//    }
     
 }
 

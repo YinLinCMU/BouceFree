@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     float timeSinceObstacle;
     int time;
     PlaySound *bouncesound;
+    CCLabelTTF *_speedLabel;
 
 }
 

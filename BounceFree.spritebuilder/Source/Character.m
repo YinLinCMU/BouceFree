@@ -1,6 +1,6 @@
 //
 //  Character.m
-//  FlappyBird
+//  
 //
 //  Created by Gerald on 2/11/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
@@ -37,7 +37,9 @@
     
 }
 -(void)speedup{
-    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+50, self.physicsBody.velocity.y);
+    self.physicsBody.velocity = ccp(self.physicsBody.velocity.x, self.physicsBody.velocity.y);
+
+    //self.physicsBody.velocity = ccp(self.physicsBody.velocity.x+50, self.physicsBody.velocity.y);
 }
 
 

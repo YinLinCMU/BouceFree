@@ -49,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		32A126D31ADDD5F800DF1E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7E7DE341A76DB7D004234B7;
+			remoteInfo = cocos2dMacFramework;
+		};
 		32EE2BCF1A6C834E00D8C500 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
@@ -195,6 +202,7 @@
 				B737894B180761A90076A88C /* libcocos2d.a */,
 				32EE2BD01A6C834E00D8C500 /* libcocos2dAndroid.a */,
 				32EE2BD41A6C834E00D8C500 /* libcocos2d-mac.a */,
+				32A126D41ADDD5F800DF1E7F /* cocos2dMacFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,7 +292,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "BounceFree" */;
 			buildPhases = (
-				D2E0167A18D782EC00927430 /* Run Script */,
 				B77F1B2A17B978D7009739AE /* Sources */,
 				B77F1B2B17B978D7009739AE /* Frameworks */,
 				B77F1B2C17B978D7009739AE /* Resources */,
@@ -342,6 +349,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		32A126D41ADDD5F800DF1E7F /* cocos2dMacFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = cocos2dMacFramework.framework;
+			remoteRef = 32A126D31ADDD5F800DF1E7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		32EE2BD01A6C834E00D8C500 /* libcocos2dAndroid.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -393,23 +407,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D2E0167A18D782EC00927430 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "osascript -e 'tell application \"System Events\"' -e 'set ProcessList to name of every process' -e 'if \"SpriteBuilder\" is in ProcessList then' -e 'tell application \"SpriteBuilder\" to publish' -e 'end if' -e 'end tell'\n\nif ! [ -n \"${MGWU_SKIP_PUSH}\" ]; then\ngit add . --all\ngit commit -m \"Automatically Committed for MakeGamesWithUs\"\ngit push origin master || true\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B77F1B2A17B978D7009739AE /* Sources */ = {

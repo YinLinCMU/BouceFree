@@ -45,6 +45,7 @@
     BOOL _gameOver;
     CCLabelTTF *_scoreLabel;
     CCLabelTTF *_scoreTotal;
+
     CCLabelTTF *_nameLabel;
     int cnt;
     int points;
@@ -71,21 +72,22 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
-    if ([prefs objectForKey:@"score1"] != NULL) {//highscore reload
-        highScore = (int)[prefs integerForKey:@"score1"];
+    if ([prefs objectForKey:@"score"] != NULL) {//highscore reload
+        highScore = (int)[prefs integerForKey:@"score"];
     }
     else{
         highScore = points;
-        [prefs setInteger:highScore forKey:@"score1"];
+        [prefs setInteger:highScore forKey:@"score"];
         [prefs synchronize];
     }
     
     _scoreLabel.visible = true;
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     _scoreTotal.visible = true;
+
     
     [super initialize];
-    character.physicsBody.velocity = ccp(character.physicsBody.velocity.x, 100);
+    character.physicsBody.velocity = ccp(200, 100);
     cnt = 0;
 }
 
@@ -114,8 +116,8 @@
         _gameOver = TRUE;
         _restartButton.visible = TRUE;
         
-        character.physicsBody.velocity = ccp(0.0f, character.physicsBody.velocity.y);
-        character.rotation = 90.f;
+        character.physicsBody.velocity = ccp(0.0f, 0.0f);
+        //character.rotation = 90.f;
         character.physicsBody.allowsRotation = FALSE;
         [character stopAllActions];
         
@@ -170,7 +172,7 @@
         [_obstacles addObject:obstacle];
     }
     else if (r == 4 || r == 3){//coin
-        float b = ((float)rand()/RAND_MAX);
+        float b = ((float)rand()/RAND_MAX)*0.8 + 0.1;
         coin.position = ccp(coin.position.x, size.height*b);
         coin.zOrder = DrawingOrderPipes;
         [physicsNode addChild:coin];
@@ -180,7 +182,7 @@
         
     }
     else if (r == 5 || r == 6){//ghost
-        float b = ((float)rand()/RAND_MAX);
+        float b = ((float)rand()/RAND_MAX)*0.8 + 0.1;
         ghost.position = ccp(ghost.position.x, size.height*b);
         obstacle.zOrder = DrawingOrderPipes;
         [physicsNode addChild:ghost];
@@ -209,13 +211,14 @@
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     _scoreTotal.visible = true;
     
+    
 }
 
 - (void)update:(CCTime)delta
 {
     
     _sinceTouch += delta;
-    
+
     //character.rotation = clampf(character.rotation, -30.f, 90.f);
     
     
@@ -285,7 +288,9 @@
     {
         @try
         {
-            character.physicsBody.velocity = ccp(180.f, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
+            //character.physicsBody.velocity = ccp(180.f, clampf(character.physicsBody.velocity.y, -MAXFLOAT, 200.f));
+            
+
 
             [super update:delta];
         }
@@ -296,27 +301,38 @@
     }
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    currentScore = (int)[prefs integerForKey:@"score1"];
+    currentScore = (int)[prefs integerForKey:@"score"];
 
     if (points > currentScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
-        [prefs setInteger:highScore forKey:@"score1"];//write
+        [prefs setInteger:highScore forKey:@"score"];//write
         [prefs synchronize];
         _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
         _scoreTotal.visible = true;
+        
+        CCParticleSystem *star = (CCParticleSystem *)[CCBReader load:@"star"];
+        star.autoRemoveOnFinish = TRUE;
+        star.position = _scoreTotal.position;
+        [_scoreTotal.parent addChild:star];
+
     }
-    
-    
     
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character minus:(CCNode*)minus {
     [minus removeFromParentAndCleanup:YES];
     points -= 2;
+    character.physicsBody.velocity = ccp(character.physicsBody.velocity.x - 1, character.physicsBody.velocity.y);
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
     [super play:@"obstacle" :@".wav"];
+    
+    CCParticleSystem *sStar = (CCParticleSystem *)[CCBReader load:@"smallStar"];
+    sStar.autoRemoveOnFinish = TRUE;
+    sStar.position = _scoreLabel.position;
+    [_scoreLabel.parent addChild:sStar];
+    
     return FALSE;
 }
 
@@ -326,6 +342,9 @@
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
+    
+    
+    
     [super play:@"coin" :@".wav"];
     return FALSE;
 }
@@ -345,15 +364,17 @@
 
     
     //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
+    ghost.physicsBody.velocity = ccp(0.0f, 0.0f);
     [super play:@"die" :@".wav"];
+
+    [ghost setSpriteFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"ghost_die.png"]];
+    //ghost = [CCSprite spriteWithImageNamed: @"ghost_die.png"];
+
     [self gameOver];
     
     return TRUE;
 }
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair character:(CCNode *)character edge:(CCNode *)edge{
-    [self gameOver];
-    return TRUE;
-}
+
 
 @end

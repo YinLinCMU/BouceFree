@@ -1,23 +1,54 @@
 # BouceFree
 
-## PM Report by Yichen Liu
+**PM Report (Yichen Liu and Yin Lin)**
 
-### Week0: Add barriers to the game
+The whole report is in a dialog format in which developer (Yin Lin) and PM (Yichen Liu) are involved.
+
+### Week 0
+
+PM: Add barrier to game so player will notice that if they touch the barrier, they will game over.
  
- + Not finished, developer can't find a good barrier so plan changed.
-
-### Week1: Add looping bounce
-
- + Instead of creating barriers, loop the movement of character from top to bottom when it is out of bound. You finished it successfully and this feature improves the game experience as well.
-
-### Week2: Add Scores
-
- + Now the user can see the score of their progress.  This feature is important because user will always want to know the current status of their game progress.
-
-### Week3: Add basic sound effects
+Developer: Not finished, can't find a good-looking barrier on all websites provided by instructors so feature abandoned.
  
- + Only bakcground music and screen-touch toggle sound is enabled. You might need to add some sound effects for success and failure.
+**Plan change approved**
 
-### week4: Add advanced sound effects and visual effects
+### Week 1
  
- + Add some visual effects when the user reaches a new high score and when the user touches objects including coins and ghosts.
+PM: Since we won't use barrier to indicate the death of user, we can change to another way
+
+Developer: Instead of creating barriers, loop the movement of character from top to bottom when it is out of bound.
+ 
+**Successfully implemented**
+
+### Week 2
+
+PM: It would be better to let players know their score to promote themselves to achieve higher score. This could heavily affect player's time spending on the game.
+
+Developer: Now the user can see the score of their progress.
+
+**Successfully implemented**
+
+### Week 3
+
+PM: Sound effects would polish the game and make it more fun to play. For example, if we have different musics when playing in different levels. It would generate a sense of satisfaction for player to keep gaming.
+ 
+Developer: Add cute background music and sound effect when game over or collect a coin.
+ 
+**Successfully implemented**
+
+### Week 4
+
+PM: Visual effects are also very imprtant when polishing a game.
+ 
+Developer: Add some visual effects when the user reaches a new high score and when the user touches objects including coins and ghosts.
+
+**Successfully implemented**
+
+
+### Week 5
+
+PM: To make BounceFree more and more diffiult after a user has played it for a long time, we can create a increasing speed similar ways as temple run
+
+Developer: the player now can sense the speed changes and we now have a different theme of background music. 
+
+**Successfully implemented**

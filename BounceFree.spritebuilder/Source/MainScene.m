@@ -72,12 +72,12 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
-    if ([prefs objectForKey:@"score"] != NULL) {//highscore reload
-        highScore = (int)[prefs integerForKey:@"score"];
+    if ([prefs objectForKey:@"score2"] != NULL) {//highscore reload
+        highScore = (int)[prefs integerForKey:@"score2"];
     }
     else{
         highScore = points;
-        [prefs setInteger:highScore forKey:@"score"];
+        [prefs setInteger:highScore forKey:@"score2"];
         [prefs synchronize];
     }
     
@@ -87,7 +87,7 @@
 
     
     [super initialize];
-    character.physicsBody.velocity = ccp(200, 100);
+    character.physicsBody.velocity = ccp(300, 100);
     cnt = 0;
 }
 
@@ -155,7 +155,7 @@
 
 
     CGSize size = [[CCDirector sharedDirector] viewSize];
-    NSUInteger r = arc4random_uniform(6);
+    NSUInteger r = arc4random_uniform(13);
     if (r == 0) {
         //NSUInteger b = 20 + arc4random_uniform(260);
 
@@ -171,7 +171,7 @@
         [physicsNode addChild:obstacle];
         [_obstacles addObject:obstacle];
     }
-    else if (r == 4 || r == 3){//coin
+    else if (r == 4 || r == 3 ||r ==5 || r ==6||r==7||r==8){//coin
         float b = ((float)rand()/RAND_MAX)*0.8 + 0.1;
         coin.position = ccp(coin.position.x, size.height*b);
         coin.zOrder = DrawingOrderPipes;
@@ -181,7 +181,7 @@
         
         
     }
-    else if (r == 5 || r == 6){//ghost
+    else if (  r == 9 || r == 10 || r == 11||r==12){//ghost
         float b = ((float)rand()/RAND_MAX)*0.8 + 0.1;
         ghost.position = ccp(ghost.position.x, size.height*b);
         obstacle.zOrder = DrawingOrderPipes;
@@ -301,19 +301,23 @@
     }
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    currentScore = (int)[prefs integerForKey:@"score"];
+    currentScore = (int)[prefs integerForKey:@"score2"];
 
     if (points > currentScore) {
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         highScore = points;
-        [prefs setInteger:highScore forKey:@"score"];//write
+        [prefs setInteger:highScore forKey:@"score2"];//write
         [prefs synchronize];
         _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
         _scoreTotal.visible = true;
         
         CCParticleSystem *star = (CCParticleSystem *)[CCBReader load:@"star"];
         star.autoRemoveOnFinish = TRUE;
-        star.position = _scoreTotal.position;
+        CGSize size = [[CCDirector sharedDirector] viewSize];
+        star.position = ccp((1-_scoreTotal.position.x)*size.width, (1-_scoreTotal.position.y)*size.height);//ccp(_scoreTotal.position.x, _scoreTotal.position.y);
+        
+        //star.position = _scoreTotal.position;
+        NSLog(@"%d,%d",_scoreTotal.position.x, _scoreTotal.position.y);
         [_scoreTotal.parent addChild:star];
 
     }
@@ -330,7 +334,10 @@
     
     CCParticleSystem *sStar = (CCParticleSystem *)[CCBReader load:@"smallStar"];
     sStar.autoRemoveOnFinish = TRUE;
-    sStar.position = _scoreLabel.position;
+    CGSize size = [[CCDirector sharedDirector] viewSize];
+    sStar.position = ccp(_scoreLabel.position.x*size.width, (1-_scoreLabel.position.y)*size.height);
+    
+    NSLog(@"%f",sStar.position.y);
     [_scoreLabel.parent addChild:sStar];
     
     return FALSE;
@@ -342,8 +349,6 @@
     points++;
     _scoreLabel.string = [NSString stringWithFormat:@"%d", points];
     _scoreTotal.string = [NSString stringWithFormat:@"%d", highScore];
-    
-    
     
     [super play:@"coin" :@".wav"];
     return FALSE;
@@ -360,21 +365,12 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair*)pair character:(CCSprite*)character ghost:(CCSprite*)ghost {
-    //highScore = [[[NSUserDefaults standardUserDefaults] objectForKey:@"HighScore"] intValue ];
-
-    
-    //[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithUnsignedLongLong:currentScore] forKey:@"score"];
     ghost.physicsBody.velocity = ccp(0.0f, 0.0f);
     [super play:@"die" :@".wav"];
-
-    [ghost setSpriteFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"ghost_die.png"]];
-    //ghost = [CCSprite spriteWithImageNamed: @"ghost_die.png"];
-
     [self gameOver];
     
     return TRUE;
 }
-
 
 
 @end

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>finalAssets/Platformer-Pixel100@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{597, 1771}, {152, 152}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {152, 152}}</string>
+			<key>sourceSize</key>
+			<string>{152, 152}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel148@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 147}, {112, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {112, 168}}</string>
+			<key>sourceSize</key>
+			<string>{112, 168}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel17@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 825}, {168, 88}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {168, 88}}</string>
+			<key>sourceSize</key>
+			<string>{168, 88}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel26@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 1467}, {168, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {168, 168}}</string>
+			<key>sourceSize</key>
+			<string>{168, 168}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel284@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 1}, {144, 120}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 120}}</string>
+			<key>sourceSize</key>
+			<string>{144, 120}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel285@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 317}, {168, 104}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {168, 104}}</string>
+			<key>sourceSize</key>
+			<string>{168, 104}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel344@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 487}, {152, 96}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {152, 96}}</string>
+			<key>sourceSize</key>
+			<string>{152, 96}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel345@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{469, 1625}, {144, 136}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 136}}</string>
+			<key>sourceSize</key>
+			<string>{144, 136}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel372@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 1637}, {136, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {136, 168}}</string>
+			<key>sourceSize</key>
+			<string>{136, 168}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel373@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{329, 1775}, {136, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {136, 168}}</string>
+			<key>sourceSize</key>
+			<string>{136, 168}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel510@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 995}, {168, 56}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {168, 56}}</string>
+			<key>sourceSize</key>
+			<string>{168, 56}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel848@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{183, 1775}, {144, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 168}}</string>
+			<key>sourceSize</key>
+			<string>{144, 168}</string>
+		</dict>
+		<key>finalAssets/Platformer-Pixel849@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{299, 1467}, {144, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 168}}</string>
+			<key>sourceSize</key>
+			<string>{144, 168}</string>
+		</dict>
+		<key>finalAssets/Vol-Mute@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1775}, {180, 180}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {180, 180}}</string>
+			<key>sourceSize</key>
+			<string>{180, 180}</string>
+		</dict>
+		<key>finalAssets/Vol-Up@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{129, 1285}, {180, 180}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {180, 180}}</string>
+			<key>sourceSize</key>
+			<string>{180, 180}</string>
+		</dict>
+		<key>finalAssets/background.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {1922, 1282}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {1922, 1282}}</string>
+			<key>sourceSize</key>
+			<string>{1922, 1282}</string>
+		</dict>
+		<key>finalAssets/buttons-22@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1285}, {488, 126}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {488, 126}}</string>
+			<key>sourceSize</key>
+			<string>{488, 126}</string>
+		</dict>
+		<key>finalAssets/c1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{467, 1775}, {128, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {128, 168}}</string>
+			<key>sourceSize</key>
+			<string>{128, 168}</string>
+		</dict>
+		<key>finalAssets/c2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{591, 1455}, {128, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {128, 168}}</string>
+			<key>sourceSize</key>
+			<string>{128, 168}</string>
+		</dict>
+		<key>finalAssets/ghost_die.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{299, 1637}, {136, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {136, 168}}</string>
+			<key>sourceSize</key>
+			<string>{136, 168}</string>
+		</dict>
+		<key>finalAssets/laserBlueHorizontal@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{607, 1625}, {140, 140}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {140, 140}}</string>
+			<key>sourceSize</key>
+			<string>{140, 140}</string>
+		</dict>
+		<key>finalAssets/mute.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 733}, {90, 90}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {90, 90}}</string>
+			<key>sourceSize</key>
+			<string>{90, 90}</string>
+		</dict>
+		<key>finalAssets/textGameOver@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{603, 1285}, {824, 156}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {824, 156}}</string>
+			<key>sourceSize</key>
+			<string>{824, 156}</string>
+		</dict>
+		<key>finalAssets/volume.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1925, 641}, {90, 90}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {90, 90}}</string>
+			<key>sourceSize</key>
+			<string>{90, 90}</string>
+		</dict>
+		<key>finalAssets/yellow_jump1@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{457, 1285}, {144, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 168}}</string>
+			<key>sourceSize</key>
+			<string>{144, 168}</string>
+		</dict>
+		<key>finalAssets/yellow_jump2@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{311, 1285}, {144, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 168}}</string>
+			<key>sourceSize</key>
+			<string>{144, 168}</string>
+		</dict>
+		<key>finalAssets/yellow_jump3@4x.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 1455}, {144, 168}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 168}}</string>
+			<key>sourceSize</key>
+			<string>{144, 168}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+		<key>textureFileName</key>
+		<string>finalAssets.png</string>
+	</dict>
+</dict>
+</plist>
